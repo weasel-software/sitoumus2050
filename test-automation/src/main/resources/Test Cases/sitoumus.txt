@@ -1,0 +1,112 @@
+*** Settings ***
+Library         Selenium2Library  15s
+Library         Collections
+Library         String
+Library         DateTime
+Resource        sitoumus_keywords.txt
+
+
+*** Test Cases ***
+Edit own profile
+  [Documentation]    First save orginal value(s) of first, last names etc. Then edit and return
+  ...   orginal values. Check that is possible to change password.
+  open browser  ${URL}  ${BROWSER}
+  Log in    sitoumus.test@soikea.com    test
+  Go to profile page
+  Edit "first name" in own profile
+  Edit "last name" in own profile
+  Edit "city" in own profile
+  Check that is possible to change password
+  [Teardown]    close browser
+
+Browsing commitments
+  [Documentation]   Browsing commitments
+  open browser  ${URL}  ${BROWSER}
+  Go to " Selaa sitoumuksia " page
+  Check "Toimenpidesitoumus" in Browsing commitments page
+  Check "Green deal" in Browsing commitments page
+  Uncheck "Toimenpidesitoumus" in Browsing commitments page
+  Check "Hiilineutraali yhteiskunta" from "Päätavoitteet"
+  Open first commitment on list
+  Go back to browsing commitments
+  Check "Kirkko, seurakunta" from "Tekijä"
+  Clear selections
+  Check "Ravitsemussitoumus" in Browsing commitments page
+  Check "Majoituspalvelut" from "Toimiala"
+  Check "Suuryritys (yli 250 henkeä)" from "Organisaation koko"
+  Clear selections
+  Check "Green deal" in Browsing commitments page
+  Check "Yritys" from "Tekijä"
+  Uncheck "Yritys" from "Tekijä"
+  Check "Toimenpidesitoumus" in Browsing commitments page
+  Click Show more in Browsing commitments page
+  [Teardown]    close browser
+
+Search in Browsing commitments
+  [Documentation]    Search in Browsing commitments
+  open browser  ${URL}  ${BROWSER}
+  Go to " Selaa sitoumuksia " page
+  Search the word "muovi*"
+  Clear selections
+  Search the word "sokeri"
+  Open first commitment on list
+  Go back to browsing commitments
+  Clear selections
+  Search the word "haapajärvi"
+  [Teardown]    close browser
+
+Registration by e-mail
+  [Documentation]    Registration by e-mail
+  open browser  ${URL}  ${BROWSER}
+  Click Register in main page
+  Close register modal
+  Click Register in main page
+  Click Registration by e-mail
+  Create new user
+  Input "first name" to Registration by e-mail
+  Input "last name" to Registration by e-mail
+  Click Register in Registration by e-mail
+  Input "faulty e-mail" to Registration by e-mail
+  Click Register in Registration by e-mail
+  Input "e-mail" to Registration by e-mail
+  Click Register in Registration by e-mail
+  Notice "Rekisteröityminen onnistui" should appear
+  Click OK
+  [Teardown]    close browser
+
+Make commitment, existing user
+    [Documentation]
+    open browser  ${URL}  ${BROWSER}
+    Log in    sitoumus.test@soikea.com    test
+    Go to profile page
+    Go to make commitment in profile page
+    Select to participate "Yksityishenkilönä"
+    Select "Toimenpidesitoumus" from commitments
+    Add information to commitment page
+    Save draft in commitment page
+    Send for inspection in commitment page
+    [Teardown]    close browser
+
+Make nutrition commitment, existing user
+    [Documentation]
+    open browser  ${URL}  ${BROWSER}
+    Log in    sitoumus.test@soikea.com    test
+    Go to profile page
+    Go to make commitment in profile page
+    Select to participate "test"
+    Select "Ravitsemussitoumus" from commitments
+    Add information to nutrition commitment page
+    Send for inspection in commitment page
+    [Teardown]    close browser
+
+Make green deal, existing user
+    [Documentation]
+    open browser  ${URL}  ${BROWSER}
+    Log in    sitoumus.test@soikea.com    test
+    Go to profile page
+    Go to make commitment in profile page
+    Select to participate "test2"
+    Select "Green deal" from commitments
+    Add information to green deal page
+    Send for inspection in commitment page
+    [Teardown]    close browser

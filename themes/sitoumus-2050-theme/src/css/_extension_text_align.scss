@@ -1,0 +1,28 @@
+/*
+ * Responsive text aligning
+ */
+.text-xs-left { text-align: left; justify-content: flex-start;}
+.text-xs-right { text-align: right; justify-content: flex-end;}
+.text-xs-center { text-align: center;justify-content: center; }
+.text-xs-justify { text-align: justify; }
+
+@media (min-width: $screen-sm-min) {
+  .text-sm-left { text-align: left;justify-content: flex-start; }
+  .text-sm-right { text-align: right;justify-content: flex-end; }
+  .text-sm-center { text-align: center; justify-content: center;}
+  .text-sm-justify { text-align: justify; }
+}
+
+@media (min-width: $screen-md-min) {
+  .text-md-left { text-align: left; justify-content: flex-start;}
+  .text-md-right { text-align: right; justify-content: flex-end;}
+  .text-md-center { text-align: center;justify-content: center; }
+  .text-md-justify { text-align: justify; }
+}
+
+@media (min-width: $screen-lg-min) {
+  .text-lg-left { text-align: left; justify-content: flex-start;}
+  .text-lg-right { text-align: right;justify-content: flex-end; }
+  .text-lg-center { text-align: center; justify-content: center;}
+  .text-lg-justify { text-align: justify; }
+}

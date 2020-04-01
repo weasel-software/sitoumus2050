@@ -1,0 +1,154 @@
+@import 'mixins';
+
+.tip {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+
+  &__environment-effect {
+    margin-right: 20px;
+  }
+
+  &__name-container {
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+  }
+
+  &__name {
+    flex-grow: 1;
+
+    @include breakpoint(mobile) {
+      flex-basis: 100%;
+    }
+  }
+
+  &__decrease {
+    color: #212121;
+    font-size: 20px;
+    font-weight: normal;
+    margin-right: 20px;
+
+    @include breakpoint(mobile) {
+      flex-basis: 100%;
+    }
+
+    &--green {
+      color: #93be38;
+      font-weight: bold;
+    }
+  }
+
+  &__container-top {
+    cursor: pointer;
+    display: flex;
+    flex-grow: 1;
+  }
+
+  &__container-bottom {
+    align-items: flex-end;
+    display: flex;
+  }
+
+  &__checkbox-container {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__checkbox {
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 20px;
+
+    @include breakpoint(mobile) {
+      margin-top: 20px;
+    }
+    @include breakpoint(tablet) {
+      margin-top: 20px;
+    }
+
+    .checkmark {
+      border: 1px solid #6b6b6b;
+      border-radius: 5px;
+      content: '';
+      display: inline-block;
+      height: 30px;
+      margin-right: 10px;
+      width: 30px;
+    }
+
+    input {
+      display: none;
+
+      &:checked ~ .checkmark {
+        background-image: url('/o/sitoumus-2050-theme/eltest/assets/images/checkmark.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 16px;
+      }
+
+      &:checked ~ .checkmark--green {
+        background-image: url('/o/sitoumus-2050-theme/eltest/assets/images/checkmark-green.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 16px;
+      }
+    }
+  }
+
+  &__details-button {
+    background: 0;
+    border: 0;
+    cursor: pointer;
+    height: 30px;
+    padding: 0;
+    width: 30px;
+
+    &-icon {
+      img {
+        height: 16px;
+        width: 16px;
+      }
+    }
+
+    &-icon-rotated {
+      img {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__expand {
+    margin: 45px auto;
+    max-width: 800px;
+    overflow: hidden;
+    text-align: center;
+
+    @include breakpoint(mobile) {
+      margin: 10px auto;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    &__description {
+      color: #212121;
+      text-align: left;
+
+      &--last {
+        align-items: center;
+        display: flex;
+        font-weight: bold;
+
+        img {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.zeroturnaround:gradle-jrebel-plugin:1.1.8"
+    }
+}
+allprojects { project ->
+    plugins.withId('java') {
+        project.apply plugin: 'org.zeroturnaround.gradle.jrebel'
+        def jarTask = project.tasks.findByName('jar')
+        if (jarTask) {
+            jarTask.dependsOn(generateRebel)
+        }
+        def warTask = project.tasks.findByName('war')
+        if (warTask) {
+            warTask.dependsOn(generateRebel)
+        }
+    }
+}

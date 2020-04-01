@@ -1,0 +1,11 @@
+{
+  "LiferayTheme": {
+    "appServerPath": "../../bundles/tomcat-8.0.32",
+    "deployPath": "../../bundles/deploy",
+    "url": "http://localhost:8080",
+    "appServerPathPlugin": "./.web_bundle_build",
+    "deployed": true,
+    "pluginName": "sitoumus-2050-theme",
+    "webBundleDir": "watching"
+  }
+}

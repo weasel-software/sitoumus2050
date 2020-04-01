@@ -1,0 +1,54 @@
+{
+  "availableLanguageIds": [
+    "fi_FI"
+  ],
+  "defaultLanguageId": "fi_FI",
+  "fields": [
+    {
+      "label": {
+        "fi_FI": "Mittari"
+      },
+      "predefinedValue": {
+        "fi_FI": ""
+      },
+      "style": {
+        "fi_FI": ""
+      },
+      "tip": {
+        "fi_FI": ""
+      },
+      "dataType": "string",
+      "indexType": "keyword",
+      "localizable": true,
+      "name": "meterType",
+      "readOnly": false,
+      "repeatable": false,
+      "required": false,
+      "showLabel": true,
+      "type": "text"
+    },
+    {
+      "label": {
+        "fi_FI": "meterValueType"
+      },
+      "predefinedValue": {
+        "fi_FI": ""
+      },
+      "style": {
+        "fi_FI": ""
+      },
+      "tip": {
+        "fi_FI": "use only values: \"REALIZED\" or \"NUMBER\""
+      },
+      "dataType": "string",
+      "indexType": "keyword",
+      "localizable": true,
+      "name": "meterValueType",
+      "readOnly": false,
+      "repeatable": false,
+      "required": false,
+      "showLabel": true,
+      "type": "text"
+    }
+  ]
+}

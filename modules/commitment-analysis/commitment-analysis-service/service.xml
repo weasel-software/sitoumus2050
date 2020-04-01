@@ -1,0 +1,202 @@
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.2.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_2_0.dtd">
+
+<service-builder dependency-injector="ds" package-path="fi.weasel.commitment2050.commitmentanalysis" >
+	<namespace>CA</namespace>
+	<!--<entity data-source="sampleDataSource" local-service="true" name="Foo" remote-service="false" session-factory="sampleSessionFactory" table="foo" tx-manager="sampleTransactionManager uuid="true"">-->
+	<entity local-service="true" name="Commitment" table="CA_Commitment" remote-service="false" data-source="caDataSource" >
+
+		<!-- PK fields -->
+
+		<column name="commitmentId" db-name="commitmentId" type="String" primary="true" />
+
+		<!-- Group instance -->
+
+		<column name="groupId" db-name="groupId" type="long" />
+
+		<!-- Audit fields -->
+
+		<column name="companyId" db-name="companyId" type="long" />
+		<column name="organizationId" db-name="organizationId" type="String" />
+		<column name="userId" db-name="userId" type="long" />
+		<column name="userName" db-name="userName" type="String" />
+		<column name="createDate" db-name="createDate" type="Date" />
+		<column name="modifiedDate" db-name="modifiedDate" type="Date" />
+
+		<!-- Other fields -->
+
+		<column name="titleFI" db-name="titleFI" type="String" />
+		<column name="titleEN" db-name="titleEN" type="String" />
+		<column name="titleSV" db-name="titleSV" type="String" />
+
+		<column name="startDate" db-name="startDate" type="Date" />
+		<column name="endDate" db-name="endDate" type="Date" />
+
+		<column name="updated" db-name="updated" type="Date" />
+		<column name="created" db-name="created" type="Date" />
+
+		<column name="innovationFI" db-name="innovationFI" type="String" />
+		<column name="innovationEN" db-name="innovationEN" type="String" />
+		<column name="innovationSV" db-name="innovationSV" type="String" />
+
+		<column name="backgroundInformationFI" db-name="backgroundInformationFI" type="String" />
+		<column name="backgroundInformationEN" db-name="backgroundInformationEN" type="String" />
+		<column name="backgroundInformationSV" db-name="backgroundInformationSV" type="String" />
+
+		<column name="shortDescriptionFI" db-name="shortDescriptionFI" type="String" />
+		<column name="shortDescriptionEN" db-name="shortDescriptionEN" type="String" />
+		<column name="shortDescriptionSV" db-name="shortDescriptionSV" type="String" />
+<!--
+		<column name="createdByUserId" db-name="createdByUserId" type="int" />
+		<column name="createdByUserName" db-name="createdByUserName" type="String" />
+-->
+		<column name="address" db-name="address" type="String" />
+		<column name="longitude" db-name="longitude" type="double" />
+		<column name="latitude" db-name="latitude" type="double" />
+
+		<column name="commitmentType" db-name="commitmentType" type="String" />
+
+		<column name="status" db-name="status" type="String" />
+
+		<column name="likes" db-name="likes" type="int" />
+		<column name="joined" db-name="joined" type="int" />
+	</entity>
+
+	<entity local-service="true" name="Operation" table="CA_Operation" remote-service="false" data-source="caDataSource" >
+
+		<column name="id" db-name="id" type="String" primary="true" />
+
+		<column name="commitmentId" db-name="commitmentId" type="String" />
+
+		<column name="operationId" db-name="operationId" type="String" />
+
+		<column name="operationCategory" db-name="operationCategory" type="String" />
+
+		<column name="operationTitleFI" db-name="operationTitleFI" type="String" />
+		<column name="operationTitleSV" db-name="operationTitleSV" type="String" />
+		<column name="operationTitleEN" db-name="operationTitleEN" type="String" />
+
+		<column name="operationDescriptionFI" db-name="operationDescriptionFI" type="String" />
+		<column name="operationDescriptionSV" db-name="operationDescriptionSV" type="String" />
+		<column name="operationDescriptionEN" db-name="operationDescriptionEN" type="String" />
+
+	</entity>
+
+	<entity local-service="true" name="DoneOperation" table="CA_DoneOperation" remote-service="false" data-source="caDataSource" >
+
+		<column name="id" db-name="id" type="String" primary="true" />
+
+		<column name="commitmentId" db-name="commitmentId" type="String"  />
+
+		<column name="operationId" db-name="operationId" type="String"  />
+
+		<column name="operationCategory" db-name="operationCategory" type="String" />
+
+		<column name="operationTitleFI" db-name="operationTitleFI" type="String" />
+		<column name="operationTitleSV" db-name="operationTitleSV" type="String" />
+		<column name="operationTitleEN" db-name="operationTitleEN" type="String" />
+
+	</entity>
+
+	<entity local-service="true" name="Meter" table="CA_Meter" remote-service="false" data-source="caDataSource" >
+
+		<column name="id" db-name="id" type="String" primary="true" />
+
+		<column name="commitmentId" db-name="commitmentId" type="String"  />
+
+		<column name="operationId" db-name="operationId" type="String" />
+
+		<column name="meterId" db-name="meterId" type="String"  />
+
+		<column name="meterCategory" db-name="meterCategory" type="String" />
+		<column name="meterChartType" db-name="meterChartType" type="String" />
+		<column name="meterValueType" db-name="meterValueType" type="String" />
+
+		<column name="meterTypeFI" db-name="meterTypeFI" type="String" />
+		<column name="meterTypeSV" db-name="meterTypeSV" type="String" />
+		<column name="meterTypeEN" db-name="meterTypeEN" type="String" />
+
+		<column name="startingLevel" db-name="startingLevel" type="String" />
+		<column name="targetLevel" db-name="targetLevel" type="String" />
+
+	</entity>
+
+	<entity local-service="true" name="Report" table="CA_Report" remote-service="false" data-source="caDataSource" >
+
+		<column name="id" db-name="id" type="String" primary="true" />
+
+		<column name="reportId" db-name="reportId" type="String" />
+
+		<column name="operationId" db-name="operationId" type="String"  />
+
+		<column name="commitmentId" db-name="commitmentId" type="String" />
+
+		<column name="createdByUserId" db-name="createdByUserId" type="int" />
+
+		<column name="createdByUserName" db-name="createdByUserName" type="String" />
+
+		<column name="organizationName" db-name="organizationName" type="String" />
+
+		<column name="progress" db-name="progress" type="String" />
+
+		<column name="reportStartDate" db-name="reportStartDate" type="Date" />
+
+		<column name="reportEndDate" db-name="reportEndDate" type="Date" />
+
+		<column name="reportStatus" db-name="reportStatus" type="boolean" />
+
+		<column name="reportTextFI" db-name="reportTextFI" type="String" />
+		<column name="reportTextSV" db-name="reportTextSV" type="String" />
+		<column name="reportTextEN" db-name="reportTextEN" type="String" />
+
+		<column name="reportTitleFI" db-name="reportTitleFI" type="String" />
+		<column name="reportTitleSV" db-name="reportTitleSV" type="String" />
+		<column name="reportTitleEN" db-name="reportTitleEN" type="String" />
+
+		<column name="status" db-name="status" type="String" />
+
+		<column name="version" db-name="version" type="double" />
+
+	</entity>
+
+    <entity local-service="true" name="ReportMeter" table="CA_ReportMeter" remote-service="false" data-source="caDataSource" >
+
+		<column name="id" db-name="id" type="String" primary="true" />
+
+        <column name="commitmentId" db-name="commitmentId" type="String"  />
+
+        <column name="operationId" db-name="operationId" type="String"  />
+
+		<column name="reportId" db-name="reportId" type="String" />
+
+		<column name="meterId" db-name="meterId" type="String" />
+
+        <column name="meterCategory" db-name="meterCategory" type="String" />
+        <column name="meterChartType" db-name="meterChartType" type="String" />
+        <column name="meterValueType" db-name="meterValueType" type="String" />
+
+        <column name="meterTypeFI" db-name="meterTypeFI" type="String" />
+        <column name="meterTypeSV" db-name="meterTypeSV" type="String" />
+        <column name="meterTypeEN" db-name="meterTypeEN" type="String" />
+
+        <column name="currentLevel" db-name="currentLevel" type="String" />
+        <column name="startingLevel" db-name="startingLevel" type="String" />
+        <column name="targetLevel" db-name="targetLevel" type="String" />
+
+    </entity>
+
+	<entity local-service="true" name="CommitmentAnalysisResult" table="CA_Results" remote-service="false" data-source="caDataSource" >
+
+		<column name="id" db-name="id" type="String" primary="true" />
+
+		<column name="resultType" db-name="resultType" type="String"  />
+
+		<column name="resultData" db-name="resultData" type="String"  />
+
+		<column name="calculated" db-name="calculated" type="Date" />
+
+		<column name="success" db-name="success" type="boolean" />
+
+	</entity>
+
+</service-builder>

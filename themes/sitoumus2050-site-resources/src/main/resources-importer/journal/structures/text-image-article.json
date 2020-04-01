@@ -1,0 +1,173 @@
+{
+  "availableLanguageIds": [
+    "fi_FI",
+    "en_US"
+  ],
+  "defaultLanguageId": "en_US",
+  "fields": [
+    {
+      "label": {
+        "fi_FI": "Otsikko",
+        "en_US": "Title"
+      },
+      "predefinedValue": {
+        "fi_FI": "",
+        "en_US": ""
+      },
+      "style": {
+        "fi_FI": "",
+        "en_US": ""
+      },
+      "tip": {
+        "fi_FI": "",
+        "en_US": ""
+      },
+      "dataType": "string",
+      "indexType": "keyword",
+      "localizable": true,
+      "name": "Title",
+      "readOnly": false,
+      "repeatable": false,
+      "required": false,
+      "showLabel": true,
+      "type": "text"
+    },
+    {
+      "label": {
+        "fi_FI": "Aliotsikko",
+        "en_US": "Subtitle"
+      },
+      "predefinedValue": {
+        "fi_FI": "",
+        "en_US": ""
+      },
+      "style": {
+        "fi_FI": "",
+        "en_US": ""
+      },
+      "tip": {
+        "fi_FI": "",
+        "en_US": ""
+      },
+      "dataType": "string",
+      "indexType": "keyword",
+      "localizable": true,
+      "name": "Subtitle",
+      "readOnly": false,
+      "repeatable": false,
+      "required": false,
+      "showLabel": true,
+      "type": "text"
+    },
+    {
+      "label": {
+        "fi_FI": "linkki",
+        "en_US": "Link url"
+      },
+      "predefinedValue": {
+        "fi_FI": "",
+        "en_US": ""
+      },
+      "style": {
+        "fi_FI": "",
+        "en_US": ""
+      },
+      "tip": {
+        "fi_FI": "",
+        "en_US": ""
+      },
+      "dataType": "string",
+      "indexType": "keyword",
+      "localizable": true,
+      "name": "LinkUrl",
+      "readOnly": false,
+      "repeatable": false,
+      "required": false,
+      "showLabel": true,
+      "type": "text"
+    },
+    {
+      "label": {
+        "fi_FI": "Linkkiteksti",
+        "en_US": "Linktext"
+      },
+      "predefinedValue": {
+        "fi_FI": "",
+        "en_US": ""
+      },
+      "style": {
+        "fi_FI": "",
+        "en_US": ""
+      },
+      "tip": {
+        "fi_FI": "",
+        "en_US": ""
+      },
+      "dataType": "string",
+      "indexType": "keyword",
+      "localizable": true,
+      "name": "Linktext",
+      "readOnly": false,
+      "repeatable": false,
+      "required": false,
+      "showLabel": true,
+      "type": "text"
+    },
+    {
+      "label": {
+        "fi_FI": "Sisältö",
+        "en_US": "Content"
+      },
+      "predefinedValue": {
+        "fi_FI": "",
+        "en_US": ""
+      },
+      "style": {
+        "fi_FI": "",
+        "en_US": ""
+      },
+      "tip": {
+        "fi_FI": "",
+        "en_US": ""
+      },
+      "dataType": "html",
+      "fieldNamespace": "ddm",
+      "indexType": "text",
+      "localizable": true,
+      "name": "Content",
+      "readOnly": false,
+      "repeatable": false,
+      "required": false,
+      "showLabel": true,
+      "type": "ddm-text-html"
+    },
+    {
+      "label": {
+        "fi_FI": "Kuva",
+        "en_US": "Image"
+      },
+      "predefinedValue": {
+        "fi_FI": "",
+        "en_US": ""
+      },
+      "style": {
+        "fi_FI": "",
+        "en_US": ""
+      },
+      "tip": {
+        "fi_FI": "",
+        "en_US": ""
+      },
+      "dataType": "image",
+      "fieldNamespace": "ddm",
+      "indexType": "text",
+      "localizable": true,
+      "name": "Image",
+      "readOnly": false,
+      "repeatable": false,
+      "required": false,
+      "showLabel": true,
+      "type": "ddm-image"
+    }
+  ]
+}

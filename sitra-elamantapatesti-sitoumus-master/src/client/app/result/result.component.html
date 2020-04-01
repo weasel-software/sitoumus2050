@@ -1,0 +1,114 @@
+<ng-container *ngIf="result">
+    <div class="heading">
+        <div class="heading__top-row">
+            <h1>{{ 'RESULT.HEADING' | translate }}</h1>
+        </div>
+        <div class="heading__bottom-row">
+            <h2>{{ 'RESULT.SUBHEADING' | translate }}</h2>
+        </div>
+    </div>
+
+    <div class="result-container">
+        <div class="result" *ngIf="resultChart.length> 0">
+            <span class="result__footprint">
+                {{ 'YOUR_FOOTPRINT' | translate}}
+            </span>
+            <strong class="result__value">
+                {{this.result.co2e | roundUp | thousandSeparator}}
+            </strong>
+            <span class="result__unit" style="display:inline-block">kg CO₂e</span>
+            <div class="result__unit-info" (clickOutside)="closeInfo()">
+                <span class="result__unit-info-button" (click)="openInfo()">
+                    i
+                </span>
+                <span class="result__unit-info-box" *ngIf="infoVisible">
+                    {{ 'RESULT.CO2E-INFO' | translate }}
+                </span>
+            </div>
+            <div class="chart-container">
+                <app-chart [values]="resultChart" [minScale]="minScale"
+                    *ngIf="resultChart.length> 0"></app-chart>
+            </div>
+        </div>
+        <div class="result" *ngIf="averageChart.length> 0">
+            <span class="result__footprint">
+                {{ 'AVERAGE_FOOTPRINT' | translate}}
+            </span>
+            <strong class="result__value" *ngIf="averageTotal">
+                {{ averageTotal | roundUp | thousandSeparator }}
+            </strong>
+            <span class="result__unit" style="display:inline-block">kg CO₂e</span>
+            <div class="chart-container">
+                <app-chart [values]="averageChart" [minScale]="minScale"
+                    *ngIf="averageChart.length> 0"></app-chart>
+            </div>
+        </div>
+        <div class="chart-legend">
+            <ng-container *ngFor="let category of result.categoryCO2e; let i=
+                index">
+                <div class="category-wrapper">
+                    <div class="category">
+                        <div class="circle">
+                            <img *ngIf="category.category.icon"
+                                [src]="'/o/sitoumus-2050-theme/eltest/assets/images/' +
+                                category.category.icon"
+                                alt="Kategoria">
+                        </div>
+                        <span class="chart-legend__title">{{category.category.title[translate.currentLang]}}</span>
+                    </div>
+                </div>
+                <br class="visible-mobile visible-tablet" *ngIf="i === 1">
+            </ng-container>
+        </div>
+        <div class="banner__details">
+            <a [href]="'RESULT.CALCULATIONS_URL' | translate" target="_blank">
+                {{ 'RESULT.CALCULATIONS_TEXT' | translate }}
+            </a>
+        </div>
+    </div>
+
+    <app-tip *ngIf="tips.length> 0" [tips]="tips" [co2e]="result.co2e"
+        (categoriesWithTips)="calculateReduction($event)"></app-tip>
+
+    <div class="summary">
+        <div class="summary__row">
+            <span>{{ 'RESULT.RESULT' | translate }}:</span>
+            <span>
+                <strong>
+                    {{ result.co2e | roundUp | thousandSeparator }}
+                </strong>
+                kg C02e
+            </span>
+        </div>
+        <div class="summary__row">
+            <span>{{ 'RESULT.TARGET' | translate }}:</span>
+            <span>
+                <strong>
+                    {{ result.co2e * todoReduction | roundUp
+                    | thousandSeparator }}
+                </strong>
+                kg C02e
+            </span>
+        </div>
+        <div class="summary__total">
+            <span>
+                {{ 'RESULT.TARGET-TEXT-1' | translate }}
+                <span class="summary__total-percentage">{{ totalReduction }} %</span>
+                {{ 'RESULT.TARGET-TEXT-2' | translate }}
+            </span>
+        </div>
+    </div>
+
+    <div class="registration">
+        <p class="registration__paragraph">
+            {{ 'RESULT.TARGET-TEXT-3' | translate }}
+        </p>
+        <p class="registration__paragraph registration__paragraph--error" *ngIf="noTodos">
+            {{ 'RESULT.NO-TODOS' | translate }}
+        </p>
+        <button class="registration__button registration__button--register"
+            (click)="register()">
+            {{ 'RESULT.CONTINUE' | translate }}
+        </button>
+    </div>
+</ng-container>

@@ -1,0 +1,88 @@
+/* --------  Boostrap carousel base styles ----------- */
+.carousel {
+  margin: 0;
+  .carousel-inner {
+    overflow: initial;
+  }
+  &.height300 {
+    min-height: 300px;
+  }
+
+  &.fade {
+    opacity: 1;
+
+    .item {
+      -moz-transition: opacity ease-in-out .7s;
+      -o-transition: opacity ease-in-out .7s;
+      -webkit-transition: opacity ease-in-out .7s;
+      transition: opacity ease-in-out .7s;
+      left: 0 !important;
+      opacity: 0;
+      top: 0;
+      position: absolute;
+      width: 100%;
+      display: block !important;
+      z-index: 1;
+      &:first-child {
+        top: auto;
+        position: relative;
+      }
+
+      &.active {
+        opacity: 1;
+        -moz-transition: opacity ease-in-out .7s;
+        -o-transition: opacity ease-in-out .7s;
+        -webkit-transition: opacity ease-in-out .7s;
+        transition: opacity ease-in-out .7s;
+        z-index: 2;
+      }
+    }
+  }
+
+  .bg-image-wrapper {
+    min-height: 310px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 90px;
+  }
+
+  .carousel-indicators {
+    display: block;
+    position: absolute;
+    z-index: 5;
+    list-style: none;
+    height: 16px;
+    padding: 0;
+    bottom: 40px;
+
+    li {
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      margin-left: 16px;
+      text-indent: -999px;
+      border: none;
+      border-radius: 95px;
+      background: rgb(174,174,174);
+
+      &.active {
+        background-color: rgb(51,51,51);
+      }
+    }
+  }
+  &.col4 .carousel-indicators {
+    position: initial;
+    float: left;
+    margin: 0 auto;
+    width: 100%;
+    padding: 25px 0 50px;
+  }
+
+  .carousel-text-container {
+    background-color: rgba(255, 255, 255, 0.75);
+    min-height: 270px;
+    padding: 20px;
+    margin-top: 20px;
+  }
+}

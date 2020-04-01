@@ -1,0 +1,640 @@
+{
+    "availableLanguageIds": [
+        "fi_FI"
+    ],
+    "defaultLanguageId": "fi_FI",
+    "fields": [
+        {
+            "label": {
+                "fi_FI": "Aloituspvm"
+            },
+            "predefinedValue": {
+                "fi_FI": ""
+            },
+            "style": {
+                "fi_FI": ""
+            },
+            "tip": {
+                "fi_FI": ""
+            },
+            "dataType": "date",
+            "fieldNamespace": "ddm",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "startDate",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "ddm-date"
+        },
+        {
+            "label": {
+                "fi_FI": "Päättymispvm"
+            },
+            "predefinedValue": {
+                "fi_FI": ""
+            },
+            "style": {
+                "fi_FI": ""
+            },
+            "tip": {
+                "fi_FI": ""
+            },
+            "dataType": "date",
+            "fieldNamespace": "ddm",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "endDate",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "ddm-date"
+        },
+        {
+            "label": {
+                "fi_FI": "Sitoumus lyhyesti"
+            },
+            "predefinedValue": {
+                "fi_FI": ""
+            },
+            "style": {
+                "fi_FI": ""
+            },
+            "tip": {
+                "fi_FI": ""
+            },
+            "dataType": "string",
+            "indexType": "text",
+            "localizable": true,
+            "name": "shortDescription",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "textarea"
+        },
+        {
+            "label": {
+                "fi_FI": "Taustatietoa"
+            },
+            "predefinedValue": {
+                "fi_FI": ""
+            },
+            "style": {
+                "fi_FI": ""
+            },
+            "tip": {
+                "fi_FI": ""
+            },
+            "dataType": "string",
+            "indexType": "text",
+            "localizable": true,
+            "name": "backgroundInformation",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "textarea"
+        },
+        {
+            "label": {
+                "fi_FI": "Mitä uutta sitoumuksessa"
+            },
+            "predefinedValue": {
+                "fi_FI": ""
+            },
+            "style": {
+                "fi_FI": ""
+            },
+            "tip": {
+                "fi_FI": ""
+            },
+            "dataType": "string",
+            "indexType": "text",
+            "localizable": true,
+            "name": "innovation",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "textarea"
+        },
+        {
+            "label": {
+                "fi_FI": "Toimenpiteen otsikko"
+            },
+            "predefinedValue": {
+                "fi_FI": ""
+            },
+            "style": {
+                "fi_FI": ""
+            },
+            "tip": {
+                "fi_FI": ""
+            },
+            "dataType": "string",
+            "indexType": "text",
+            "localizable": true,
+            "name": "operationTitle",
+            "readOnly": false,
+            "repeatable": true,
+            "required": false,
+            "showLabel": true,
+            "type": "textarea",
+            "nestedFields": [
+                {
+                    "label": {
+                        "fi_FI": "operationId"
+                    },
+                    "predefinedValue": {
+                        "fi_FI": ""
+                    },
+                    "style": {
+                        "fi_FI": ""
+                    },
+                    "tip": {
+                        "fi_FI": "Operaation id on oltava yksilöllinen. Raportoitaessa toimenpidettä on raportilla oltava vastaava operationId"
+                    },
+                    "dataType": "string",
+                    "indexType": "keyword",
+                    "localizable": true,
+                    "name": "operationId",
+                    "readOnly": false,
+                    "repeatable": false,
+                    "required": false,
+                    "showLabel": true,
+                    "type": "text"
+                },
+                {
+                    "label": {
+                        "fi_FI": "Toimenpiteen kuvaus"
+                    },
+                    "predefinedValue": {
+                        "fi_FI": ""
+                    },
+                    "style": {
+                        "fi_FI": ""
+                    },
+                    "tip": {
+                        "fi_FI": ""
+                    },
+                    "dataType": "string",
+                    "indexType": "text",
+                    "localizable": true,
+                    "name": "operationDescription",
+                    "readOnly": false,
+                    "repeatable": false,
+                    "required": false,
+                    "showLabel": true,
+                    "type": "textarea"
+                },
+                {
+                    "label": {
+                        "fi_FI": "Mittari"
+                    },
+                    "predefinedValue": {
+                        "fi_FI": ""
+                    },
+                    "style": {
+                        "fi_FI": ""
+                    },
+                    "tip": {
+                        "fi_FI": ""
+                    },
+                    "dataType": "string",
+                    "indexType": "keyword",
+                    "localizable": true,
+                    "name": "meterType",
+                    "readOnly": false,
+                    "repeatable": true,
+                    "required": false,
+                    "showLabel": true,
+                    "type": "text",
+                    "nestedFields": [
+                        {
+                            "label": {
+                                "fi_FI": "meterId"
+                            },
+                            "predefinedValue": {
+                                "fi_FI": ""
+                            },
+                            "style": {
+                                "fi_FI": ""
+                            },
+                            "tip": {
+                                "fi_FI": "Operaation mittarin id. Tätä tietoa käytetään yhdistämään luotettavamman raportoidut tiedot toimenpiteessä määriteltyihin mittareihin"
+                            },
+                            "dataType": "string",
+                            "indexType": "keyword",
+                            "localizable": true,
+                            "name": "meterId",
+                            "readOnly": false,
+                            "repeatable": false,
+                            "required": false,
+                            "showLabel": true,
+                            "type": "text"
+                        },
+                        {
+                            "label": {
+                                "fi_FI": "meterValueType"
+                            },
+                            "predefinedValue": {
+                                "fi_FI": ""
+                            },
+                            "style": {
+                                "fi_FI": ""
+                            },
+                            "tip": {
+                                "fi_FI": "realized: lähtötaso arvo aina false, ja tavoite true, raportoitava arvo ture. Number: lähtö ja tavoitetaso lukuja, raportoitava arvo luku."
+                            },
+                            "dataType": "string",
+                            "indexType": "keyword",
+                            "localizable": true,
+                            "name": "meterValueType",
+                            "readOnly": false,
+                            "repeatable": false,
+                            "required": false,
+                            "showLabel": true,
+                            "type": "text"
+                        },
+                        {
+                            "label": {
+                                "fi_FI": "Lähtötaso"
+                            },
+                            "predefinedValue": {
+                                "fi_FI": ""
+                            },
+                            "style": {
+                                "fi_FI": ""
+                            },
+                            "tip": {
+                                "fi_FI": ""
+                            },
+                            "dataType": "string",
+                            "indexType": "keyword",
+                            "localizable": true,
+                            "name": "startingLevel",
+                            "readOnly": false,
+                            "repeatable": false,
+                            "required": false,
+                            "showLabel": true,
+                            "type": "text"
+                        },
+                        {
+                            "label": {
+                                "fi_FI": "Tavoitetaso"
+                            },
+                            "predefinedValue": {
+                                "fi_FI": ""
+                            },
+                            "style": {
+                                "fi_FI": ""
+                            },
+                            "tip": {
+                                "fi_FI": ""
+                            },
+                            "dataType": "string",
+                            "indexType": "keyword",
+                            "localizable": true,
+                            "name": "targetLevel",
+                            "readOnly": false,
+                            "repeatable": false,
+                            "required": false,
+                            "showLabel": true,
+                            "type": "text"
+                        },
+                        {
+                            "label": {
+                                "fi_FI": "Graafi"
+                            },
+                            "predefinedValue": {
+                                "fi_FI": ""
+                            },
+                            "style": {
+                                "fi_FI": ""
+                            },
+                            "tip": {
+                                "fi_FI": "Chart types: LINE, COLUMN, PIE,"
+                            },
+                            "dataType": "string",
+                            "indexType": "keyword",
+                            "localizable": true,
+                            "name": "meterChartType",
+                            "readOnly": false,
+                            "repeatable": false,
+                            "required": false,
+                            "showLabel": true,
+                            "type": "text"
+                        },
+                        {
+                            "label": {
+                                "fi_FI": "Mittarin kategoria"
+                            },
+                            "options": [
+                                {
+                                    "value": "Oletus",
+                                    "label": {
+                                        "fi_FI": "Oletus"
+                                    }
+                                },
+                                {
+                                    "value": "Liikkuminen",
+                                    "label": {
+                                        "fi_FI": "Liikkuminen"
+                                    }
+                                },
+                                {
+                                    "value": "Asuminen",
+                                    "label": {
+                                        "fi_FI": "Asuminen"
+                                    }
+                                },
+                                {
+                                    "value": "Ruoka",
+                                    "label": {
+                                        "fi_FI": "Ruoka"
+                                    }
+                                },
+                                {
+                                    "value": "Tuotteet",
+                                    "label": {
+                                        "fi_FI": "Tuotteet ja palvelut"
+                                    }
+                                }
+                            ],
+                            "predefinedValue": {
+                                "fi_FI": [
+                                    ""
+                                ]
+                            },
+                            "style": {
+                                "fi_FI": ""
+                            },
+                            "tip": {
+                                "fi_FI": ""
+                            },
+                            "dataType": "string",
+                            "indexType": "keyword",
+                            "localizable": true,
+                            "multiple": false,
+                            "name": "meterCategory",
+                            "readOnly": false,
+                            "repeatable": false,
+                            "required": false,
+                            "showLabel": true,
+                            "type": "select"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "label": {
+                "fi_FI": "Osoite"
+            },
+            "predefinedValue": {
+                "fi_FI": ""
+            },
+            "style": {
+                "fi_FI": ""
+            },
+            "tip": {
+                "fi_FI": ""
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "address",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "text"
+        },
+        {
+            "label": {
+                "fi_FI": "Geolocation"
+            },
+            "predefinedValue": {
+                "fi_FI": ""
+            },
+            "style": {
+                "fi_FI": ""
+            },
+            "tip": {
+                "fi_FI": ""
+            },
+            "dataType": "geolocation",
+            "fieldNamespace": "ddm",
+            "indexType": "keyword",
+            "localizable": false,
+            "name": "geolocation",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "ddm-geolocation"
+        },
+        {
+            "label": {
+                "fi_FI": "Raportointitiheys"
+            },
+            "predefinedValue": {
+                "fi_FI": ""
+            },
+            "style": {
+                "fi_FI": ""
+            },
+            "tip": {
+                "fi_FI": ""
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "reportingInterval",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "text"
+        },
+        {
+            "label": {
+                "fi_FI": "Muistuta raportoinnista"
+            },
+            "predefinedValue": {
+                "fi_FI": false
+            },
+            "style": {
+                "fi_FI": ""
+            },
+            "tip": {
+                "fi_FI": ""
+            },
+            "dataType": "boolean",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "reportReminder",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "checkbox"
+        },
+        {
+            "label": {
+                "fi_FI": "Hyväksy sitoumuksen kriteerit"
+            },
+            "predefinedValue": {
+                "fi_FI": false
+            },
+            "style": {
+                "fi_FI": ""
+            },
+            "tip": {
+                "fi_FI": ""
+            },
+            "dataType": "boolean",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "acceptCriterias",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "checkbox"
+        },
+        {
+            "label": {
+                "fi_FI": "Sitoumuksen kuva"
+            },
+            "predefinedValue": {
+                "fi_FI": ""
+            },
+            "style": {
+                "fi_FI": ""
+            },
+            "tip": {
+                "fi_FI": "Kuva on ensin tallennettava Asiakirja-ja mediatiedostoihin, hakemistoon sitoumusten kuvat"
+            },
+            "dataType": "document-library",
+            "fieldNamespace": "ddm",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "commitmentImageUrl",
+            "readOnly": false,
+            "repeatable": false,
+            "required": false,
+            "showLabel": true,
+            "type": "ddm-documentlibrary"
+        },
+        {
+            "label": {
+                "fi_FI": "Teen jo toimenpide"
+            },
+            "predefinedValue": {
+                "fi_FI": ""
+            },
+            "style": {
+                "fi_FI": ""
+            },
+            "tip": {
+                "fi_FI": "Tämä kenttä on vain informatiivista lisää mitä tekoja käyttäjä tekee jo. simerkiksi elämäntapatestin pohjalta tehdyissä sitoumuksissa voi olla näitä tietoja."
+            },
+            "dataType": "string",
+            "indexType": "keyword",
+            "localizable": true,
+            "name": "doneOperation",
+            "readOnly": false,
+            "repeatable": true,
+            "required": false,
+            "showLabel": true,
+            "type": "text",
+            "nestedFields": [
+                {
+                    "label": {
+                        "fi_FI": "doneOperationId"
+                    },
+                    "predefinedValue": {
+                        "fi_FI": ""
+                    },
+                    "style": {
+                        "fi_FI": ""
+                    },
+                    "tip": {
+                        "fi_FI": "Jos toimenpide on poimittu jostain pohjasta, voi tähän kenttään laittaa viitteen ko. pohjan artikkeliID:seen, jolloin tunnistaminen esim. sitoumuksen muokkauksessa on helpompaa"
+                    },
+                    "dataType": "string",
+                    "indexType": "keyword",
+                    "localizable": true,
+                    "name": "doneOperationId",
+                    "readOnly": false,
+                    "repeatable": false,
+                    "required": false,
+                    "showLabel": true,
+                    "type": "text"
+                },
+                {
+                    "label": {
+                        "fi_FI": "Toimenpiteen kategoria"
+                    },
+                    "options": [
+                        {
+                            "value": "Oletus",
+                            "label": {
+                                "fi_FI": "Oletus"
+                            }
+                        },
+                        {
+                            "value": "Liikkuminen",
+                            "label": {
+                                "fi_FI": "Liikkuminen"
+                            }
+                        },
+                        {
+                            "value": "Asuminen",
+                            "label": {
+                                "fi_FI": "Asuminen"
+                            }
+                        },
+                        {
+                            "value": "Ruoka",
+                            "label": {
+                                "fi_FI": "Ruoka"
+                            }
+                        },
+                        {
+                            "value": "Tuotteet",
+                            "label": {
+                                "fi_FI": "Tuotteet ja palvelut"
+                            }
+                        }
+                    ],
+                    "predefinedValue": {
+                        "fi_FI": [
+                            ""
+                        ]
+                    },
+                    "style": {
+                        "fi_FI": ""
+                    },
+                    "tip": {
+                        "fi_FI": ""
+                    },
+                    "dataType": "string",
+                    "indexType": "keyword",
+                    "localizable": true,
+                    "multiple": false,
+                    "name": "doneOperationCategory",
+                    "readOnly": false,
+                    "repeatable": false,
+                    "required": false,
+                    "showLabel": true,
+                    "type": "select"
+                }
+            ]
+        }
+    ]
+}

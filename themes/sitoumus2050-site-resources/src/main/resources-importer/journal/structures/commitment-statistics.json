@@ -1,0 +1,146 @@
+{
+  "availableLanguageIds": [
+    "fi_FI"
+  ],
+  "defaultLanguageId": "fi_FI",
+  "fields": [
+    {
+      "label": {
+        "fi_FI": "commitment"
+      },
+      "predefinedValue": {
+        "fi_FI": ""
+      },
+      "style": {
+        "fi_FI": ""
+      },
+      "tip": {
+        "fi_FI": ""
+      },
+      "dataType": "string",
+      "indexType": "keyword",
+      "localizable": true,
+      "name": "commitment",
+      "readOnly": false,
+      "repeatable": false,
+      "required": false,
+      "showLabel": true,
+      "type": "text"
+    },
+    {
+      "label": {
+        "fi_FI": "greendeal"
+      },
+      "predefinedValue": {
+        "fi_FI": ""
+      },
+      "style": {
+        "fi_FI": ""
+      },
+      "tip": {
+        "fi_FI": ""
+      },
+      "dataType": "string",
+      "indexType": "keyword",
+      "localizable": true,
+      "name": "greendeal",
+      "readOnly": false,
+      "repeatable": false,
+      "required": false,
+      "showLabel": true,
+      "type": "text"
+    },
+    {
+      "label": {
+        "fi_FI": "nutrition"
+      },
+      "predefinedValue": {
+        "fi_FI": ""
+      },
+      "style": {
+        "fi_FI": ""
+      },
+      "tip": {
+        "fi_FI": ""
+      },
+      "dataType": "string",
+      "indexType": "keyword",
+      "localizable": true,
+      "name": "nutrition",
+      "readOnly": false,
+      "repeatable": false,
+      "required": false,
+      "showLabel": true,
+      "type": "text"
+    },
+    {
+      "label": {
+        "fi_FI": "lifestyletest"
+      },
+      "predefinedValue": {
+        "fi_FI": ""
+      },
+      "style": {
+        "fi_FI": ""
+      },
+      "tip": {
+        "fi_FI": ""
+      },
+      "dataType": "string",
+      "indexType": "keyword",
+      "localizable": true,
+      "name": "lifestyletest",
+      "readOnly": false,
+      "repeatable": false,
+      "required": false,
+      "showLabel": true,
+      "type": "text"
+    },
+    {
+      "label": {
+        "fi_FI": "linkText"
+      },
+      "predefinedValue": {
+        "fi_FI": ""
+      },
+      "style": {
+        "fi_FI": ""
+      },
+      "tip": {
+        "fi_FI": ""
+      },
+      "dataType": "string",
+      "indexType": "keyword",
+      "localizable": true,
+      "name": "linkText",
+      "readOnly": false,
+      "repeatable": false,
+      "required": false,
+      "showLabel": true,
+      "type": "text"
+    },
+    {
+      "label": {
+        "fi_FI": "linkUrl"
+      },
+      "predefinedValue": {
+        "fi_FI": ""
+      },
+      "style": {
+        "fi_FI": ""
+      },
+      "tip": {
+        "fi_FI": ""
+      },
+      "dataType": "string",
+      "indexType": "keyword",
+      "localizable": true,
+      "name": "linkUrl",
+      "readOnly": false,
+      "repeatable": false,
+      "required": false,
+      "showLabel": true,
+      "type": "text"
+    }
+  ]
+}

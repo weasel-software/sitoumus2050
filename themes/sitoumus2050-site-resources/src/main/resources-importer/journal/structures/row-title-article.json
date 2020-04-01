@@ -1,0 +1,123 @@
+{
+  "availableLanguageIds": [
+    "fi_FI"
+  ],
+  "defaultLanguageId": "fi_FI",
+  "fields": [
+    {
+      "label": {
+        "fi_FI": "Otsikko"
+      },
+      "predefinedValue": {
+        "fi_FI": ""
+      },
+      "style": {
+        "fi_FI": ""
+      },
+      "tip": {
+        "fi_FI": ""
+      },
+      "dataType": "string",
+      "indexType": "keyword",
+      "localizable": true,
+      "name": "title",
+      "readOnly": false,
+      "repeatable": false,
+      "required": false,
+      "showLabel": true,
+      "type": "text"
+    },
+    {
+      "label": {
+        "fi_FI": "Aliotsikko"
+      },
+      "predefinedValue": {
+        "fi_FI": ""
+      },
+      "style": {
+        "fi_FI": ""
+      },
+      "tip": {
+        "fi_FI": ""
+      },
+      "dataType": "string",
+      "indexType": "keyword",
+      "localizable": true,
+      "name": "subTitle",
+      "readOnly": false,
+      "repeatable": false,
+      "required": false,
+      "showLabel": true,
+      "type": "text"
+    },
+    {
+      "label": {
+        "fi_FI": "Linkki"
+      },
+      "predefinedValue": {
+        "fi_FI": ""
+      },
+      "style": {
+        "fi_FI": ""
+      },
+      "tip": {
+        "fi_FI": ""
+      },
+      "dataType": "string",
+      "indexType": "keyword",
+      "localizable": true,
+      "name": "linkUrl",
+      "readOnly": false,
+      "repeatable": false,
+      "required": false,
+      "showLabel": true,
+      "type": "text"
+    },
+    {
+      "label": {
+        "fi_FI": "Linkkiteksti"
+      },
+      "predefinedValue": {
+        "fi_FI": ""
+      },
+      "style": {
+        "fi_FI": ""
+      },
+      "tip": {
+        "fi_FI": ""
+      },
+      "dataType": "string",
+      "indexType": "keyword",
+      "localizable": true,
+      "name": "linktext",
+      "readOnly": false,
+      "repeatable": false,
+      "required": false,
+      "showLabel": true,
+      "type": "text"
+    },
+    {
+      "label": {
+        "fi_FI": "Avaa linkki uuteen välilehteen"
+      },
+      "predefinedValue": {
+        "fi_FI": false
+      },
+      "style": {
+        "fi_FI": ""
+      },
+      "tip": {
+        "fi_FI": ""
+      },
+      "dataType": "boolean",
+      "indexType": "keyword",
+      "localizable": true,
+      "name": "LinkTargetBlank",
+      "readOnly": false,
+      "repeatable": false,
+      "required": false,
+      "showLabel": true,
+      "type": "checkbox"
+    }
+  ]
+}

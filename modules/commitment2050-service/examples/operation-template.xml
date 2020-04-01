@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+
+<root available-locales="fi_FI,en_US" default-locale="fi_FI">
+    <dynamic-element name="title" type="text" index-type="keyword" instance-id="wwrz">
+        <dynamic-content language-id="fi_FI"><![CDATA[Esimerkki toimenpiteen otsikko]]></dynamic-content>
+        <dynamic-content language-id="en_US"><![CDATA[Example title]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="description" type="text_area" index-type="text" instance-id="ozqo">
+        <dynamic-content language-id="fi_FI"><![CDATA[<p>&nbsp;</p>
+
+<p>Esimerkki kuvausta<strong> ja muotoilua</strong></p>
+
+<ul>
+	<li>lista1</li>
+	<li>lista2</li>
+</ul>
+
+<p>&nbsp;</p>]]></dynamic-content>
+        <dynamic-content language-id="en_US"><![CDATA[<p>Example description</p>]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="image" type="document_library" index-type="keyword" instance-id="vsua">
+        <dynamic-content language-id="fi_FI"><![CDATA[/documents/20143/31499/mustikat.jpeg/e76245fa-75c4-0c9a-ac6a-6065bc9efbe1?t=1521595261304]]></dynamic-content>
+        <dynamic-content language-id="en_US"><![CDATA[/documents/20143/31499/mustikat.jpeg/e76245fa-75c4-0c9a-ac6a-6065bc9efbe1?t=1521595261304]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="decrease" type="text" index-type="keyword" instance-id="lmha">
+        <dynamic-content language-id="fi_FI"><![CDATA[5]]></dynamic-content>
+        <dynamic-content language-id="en_US"><![CDATA[5]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="environmentEffect" type="list" index-type="keyword" instance-id="tbgd">
+        <dynamic-content language-id="fi_FI"><![CDATA[1]]></dynamic-content>
+        <dynamic-content language-id="en_US"><![CDATA[5]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="linkUrl" type="text" index-type="keyword" instance-id="lgyk">
+        <dynamic-element name="linkText" instance-id="rvng" type="text" index-type="keyword">
+            <dynamic-content language-id="fi_FI"><![CDATA[]]></dynamic-content>
+            <dynamic-content language-id="en_US"><![CDATA[]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="linkIcon" instance-id="wwmp" type="text" index-type="keyword">
+            <dynamic-content language-id="fi_FI"><![CDATA[]]></dynamic-content>
+            <dynamic-content language-id="en_US"><![CDATA[]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-content language-id="fi_FI"><![CDATA[]]></dynamic-content>
+        <dynamic-content language-id="en_US"><![CDATA[]]></dynamic-content>
+    </dynamic-element>
+</root>

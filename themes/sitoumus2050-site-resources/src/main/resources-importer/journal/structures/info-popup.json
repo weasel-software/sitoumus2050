@@ -1,0 +1,101 @@
+{
+  "availableLanguageIds": [
+    "fi_FI"
+  ],
+  "defaultLanguageId": "fi_FI",
+  "fields": [
+    {
+      "label": {
+        "fi_FI": "Title"
+      },
+      "predefinedValue": {
+        "fi_FI": ""
+      },
+      "style": {
+        "fi_FI": ""
+      },
+      "tip": {
+        "fi_FI": ""
+      },
+      "dataType": "string",
+      "indexType": "keyword",
+      "localizable": true,
+      "name": "Title",
+      "readOnly": false,
+      "repeatable": false,
+      "required": false,
+      "showLabel": true,
+      "type": "text"
+    },
+    {
+      "label": {
+        "fi_FI": "Content"
+      },
+      "predefinedValue": {
+        "fi_FI": ""
+      },
+      "style": {
+        "fi_FI": ""
+      },
+      "tip": {
+        "fi_FI": ""
+      },
+      "dataType": "html",
+      "fieldNamespace": "ddm",
+      "indexType": "text",
+      "localizable": true,
+      "name": "content",
+      "readOnly": false,
+      "repeatable": false,
+      "required": false,
+      "showLabel": true,
+      "type": "ddm-text-html"
+    },
+    {
+      "label": {
+        "fi_FI": "Linkki"
+      },
+      "predefinedValue": {
+        "fi_FI": ""
+      },
+      "style": {
+        "fi_FI": ""
+      },
+      "tip": {
+        "fi_FI": ""
+      },
+      "dataType": "string",
+      "indexType": "keyword",
+      "localizable": true,
+      "name": "linkUrl",
+      "readOnly": false,
+      "repeatable": false,
+      "required": false,
+      "showLabel": true,
+      "type": "text"
+    },
+    {
+      "label": {
+        "fi_FI": "Linkkiteksti"
+      },
+      "predefinedValue": {
+        "fi_FI": ""
+      },
+      "style": {
+        "fi_FI": ""
+      },
+      "tip": {
+        "fi_FI": ""
+      },
+      "dataType": "string",
+      "indexType": "keyword",
+      "localizable": true,
+      "name": "linkText",
+      "readOnly": false,
+      "repeatable": false,
+      "required": false,
+      "showLabel": true,
+      "type": "text"
+    }
+  ]
+}

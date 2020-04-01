@@ -1,0 +1,11 @@
+liferay:
+  image: docker.soikea.com/sitoumus2050localdocker
+  environment:
+   - MYSQL_DATABASE=sitoumus_lportal
+   - MYSQL_HOST=<host-ip>
+   - MYSQL_USER=*mysql_user*
+   - MYSQL_PASSWORD=*mysql_passwod*
+  ports:
+   - 8080:8080
+   - 11311:11311
+

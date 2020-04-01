@@ -1,0 +1,77 @@
+{
+  "availableLanguageIds": [
+    "fi_FI"
+  ],
+  "defaultLanguageId": "fi_FI",
+  "fields": [
+    {
+      "label": {
+        "fi_FI": "info"
+      },
+      "predefinedValue": {
+        "fi_FI": ""
+      },
+      "style": {
+        "fi_FI": ""
+      },
+      "tip": {
+        "fi_FI": ""
+      },
+      "dataType": "string",
+      "indexType": "",
+      "localizable": true,
+      "name": "info",
+      "readOnly": false,
+      "repeatable": false,
+      "required": false,
+      "showLabel": true,
+      "type": "textarea"
+    },
+    {
+      "label": {
+        "fi_FI": "placeholder"
+      },
+      "predefinedValue": {
+        "fi_FI": ""
+      },
+      "style": {
+        "fi_FI": ""
+      },
+      "tip": {
+        "fi_FI": ""
+      },
+      "dataType": "string",
+      "indexType": "text",
+      "localizable": true,
+      "name": "placeholder",
+      "readOnly": false,
+      "repeatable": false,
+      "required": false,
+      "showLabel": true,
+      "type": "textarea"
+    },
+		{
+		"label": {
+				"fi_FI": "section"
+		},
+		"predefinedValue": {
+				"fi_FI": "sitoumus_lyhyesti"
+		},
+		"style": {
+				"fi_FI": ""
+		},
+		"tip": {
+				"fi_FI": ""
+		},
+		"dataType": "string",
+		"indexType": "text",
+		"localizable": true,
+		"name": "section",
+		"readOnly": false,
+		"repeatable": false,
+		"required": true,
+		"showLabel": true,
+		"type": "textarea"
+}
+  ]
+}

@@ -1,0 +1,127 @@
+@import 'variables';
+
+.chart {
+  height: 100%;
+  width: 100%;
+}
+
+.chart__bar {
+  height: 100%;
+  position: relative;
+  text-align: left;
+}
+
+.bar {
+  height: 100%;
+  width: 0;
+  position: relative;
+  float: left;
+  opacity: 0;
+  border: 0 none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    height: 50%;
+    width: 100%;
+  }
+}
+
+.bar-animation {
+  transition: width 1s ease-in-out, opacity 0.1s linear;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.bar {
+  span {
+    background: white;
+    border: 1px solid #d6d6d6;
+    border-radius: 3px;
+    color: black;
+    line-height: 1.4;
+    opacity: 0;
+    padding: 5px 10px;
+    position: absolute;
+    text-align: center;
+    transition: opacity 0.2s linear;
+    visibility: hidden;
+  }
+
+  &:last-of-type {
+    border-right-style: solid;
+    border-right-width: 1px;
+  }
+
+  &:hover {
+    span {
+      bottom: 80%;
+      box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+      opacity: 1;
+      visibility: visible;
+      white-space: nowrap;
+      z-index: 999;
+    }
+  }
+}
+
+.hover {
+  span {
+    bottom: 80%;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+    opacity: 1;
+    visibility: visible;
+    white-space: nowrap;
+    z-index: 999;
+  }
+}
+
+.green {
+    background-color: $color-green;
+}
+
+.border-green {
+    border: 1px solid $color-green-secondary;
+    border-right-color: $color-green-secondary !important;
+}
+
+.blue {
+    background-color: $color-blue;
+}
+
+.border-blue {
+    border: 1px solid $color-blue-secondary;
+    border-right-color: $color-blue-secondary !important;
+}
+
+.yellow {
+    background-color: $color-yellow;
+}
+
+.border-yellow {
+    border: 1px solid $color-yellow-secondary;
+    border-right-color: $color-yellow-secondary !important;
+}
+
+.orange {
+    background-color: $color-orange;
+}
+
+.border-orange {
+    border: 1px solid $color-orange-secondary;
+    border-right-color: $color-orange-secondary !important;
+}
+
+.bar {
+    &:last-of-type {
+        border-right-width: 1px;
+        border-right-style: solid;
+    }
+}
+
+.hide-right-border {
+  border-right: hidden;
+}

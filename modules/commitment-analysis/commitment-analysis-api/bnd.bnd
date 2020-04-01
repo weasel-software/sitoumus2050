@@ -1,0 +1,10 @@
+Bundle-Name: commitment-analysis-api
+Bundle-SymbolicName: fi.weasel.commitment2050.commitmentanalysis.api
+Bundle-Version: 1.0.0
+Export-Package: \
+	fi.weasel.commitment2050.commitmentanalysis.exception,\
+	fi.weasel.commitment2050.commitmentanalysis.model,\
+	fi.weasel.commitment2050.commitmentanalysis.service,\
+	fi.weasel.commitment2050.commitmentanalysis.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../commitment-analysis-service/service.xml

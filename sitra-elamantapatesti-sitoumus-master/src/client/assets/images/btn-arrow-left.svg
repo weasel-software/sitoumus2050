@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="21px" viewBox="0 0 14 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>7EC29AAA-6FBD-4447-A983-1810D1541CD5</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Layouts" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Testin-tulos---desktop" transform="translate(-52.000000, -195.000000)" fill="#93BE38" stroke="#93BE38" stroke-width="2">
+            <g id="back" transform="translate(37.000000, 182.000000)">
+                <g id="btn-plärä-left">
+                    <path d="M22,18.7590675 L22.0081457,18.7509218 L22.5129575,19.2557336 L22.5048118,19.2638792 L30.985199,27.7442664 L30.4803872,28.2490782 L22,19.768691 L13.5196128,28.2490782 L13.014801,27.7442664 L21.4951882,19.2638792 L21.4870425,19.2557336 L21.9918543,18.7509218 L22,18.7590675 Z" id="btn-arrow-left" transform="translate(22.000000, 23.500000) scale(1, -1) rotate(-90.000000) translate(-22.000000, -23.500000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

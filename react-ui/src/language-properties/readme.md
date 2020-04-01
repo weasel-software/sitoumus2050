@@ -1,0 +1,1 @@
+This folder contains translation files copied over from Liferay hook-language. These are copied as perf a optimization for react-ui and used only in production builds. Do not edit these files - if you want to add a new translation, edit files on modules/hook-language/src/main/resources/content/ instead.

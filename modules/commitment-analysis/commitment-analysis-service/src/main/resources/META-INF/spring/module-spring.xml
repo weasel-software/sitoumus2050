@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" default-destroy-method="destroy" default-init-method="afterPropertiesSet" xsi:schemaLocation=" http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean class="fi.weasel.commitment2050.commitmentanalysis.service.impl.CommitmentLocalServiceImpl" id="fi.weasel.commitment2050.commitmentanalysis.service.CommitmentLocalService" />
+	<bean class="fi.weasel.commitment2050.commitmentanalysis.service.persistence.impl.CommitmentPersistenceImpl" id="fi.weasel.commitment2050.commitmentanalysis.service.persistence.CommitmentPersistence" parent="basePersistence">
+		<property name="dataSource" ref="caDataSource" />
+	</bean>
+	<bean class="fi.weasel.commitment2050.commitmentanalysis.service.persistence.impl.CommitmentFinderImpl" id="fi.weasel.commitment2050.commitmentanalysis.service.persistence.CommitmentFinder" parent="basePersistence">
+		<property name="dataSource" ref="caDataSource" />
+	</bean>
+	<bean class="fi.weasel.commitment2050.commitmentanalysis.service.impl.CommitmentAnalysisResultLocalServiceImpl" id="fi.weasel.commitment2050.commitmentanalysis.service.CommitmentAnalysisResultLocalService" />
+	<bean class="fi.weasel.commitment2050.commitmentanalysis.service.persistence.impl.CommitmentAnalysisResultPersistenceImpl" id="fi.weasel.commitment2050.commitmentanalysis.service.persistence.CommitmentAnalysisResultPersistence" parent="basePersistence">
+		<property name="dataSource" ref="caDataSource" />
+	</bean>
+	<bean class="fi.weasel.commitment2050.commitmentanalysis.service.persistence.impl.CommitmentAnalysisResultFinderImpl" id="fi.weasel.commitment2050.commitmentanalysis.service.persistence.CommitmentAnalysisResultFinder" parent="basePersistence">
+		<property name="dataSource" ref="caDataSource" />
+	</bean>
+	<bean class="fi.weasel.commitment2050.commitmentanalysis.service.impl.DoneOperationLocalServiceImpl" id="fi.weasel.commitment2050.commitmentanalysis.service.DoneOperationLocalService" />
+	<bean class="fi.weasel.commitment2050.commitmentanalysis.service.persistence.impl.DoneOperationPersistenceImpl" id="fi.weasel.commitment2050.commitmentanalysis.service.persistence.DoneOperationPersistence" parent="basePersistence">
+		<property name="dataSource" ref="caDataSource" />
+	</bean>
+	<bean class="fi.weasel.commitment2050.commitmentanalysis.service.impl.MeterLocalServiceImpl" id="fi.weasel.commitment2050.commitmentanalysis.service.MeterLocalService" />
+	<bean class="fi.weasel.commitment2050.commitmentanalysis.service.persistence.impl.MeterPersistenceImpl" id="fi.weasel.commitment2050.commitmentanalysis.service.persistence.MeterPersistence" parent="basePersistence">
+		<property name="dataSource" ref="caDataSource" />
+	</bean>
+	<bean class="fi.weasel.commitment2050.commitmentanalysis.service.impl.OperationLocalServiceImpl" id="fi.weasel.commitment2050.commitmentanalysis.service.OperationLocalService" />
+	<bean class="fi.weasel.commitment2050.commitmentanalysis.service.persistence.impl.OperationPersistenceImpl" id="fi.weasel.commitment2050.commitmentanalysis.service.persistence.OperationPersistence" parent="basePersistence">
+		<property name="dataSource" ref="caDataSource" />
+	</bean>
+	<bean class="fi.weasel.commitment2050.commitmentanalysis.service.impl.ReportLocalServiceImpl" id="fi.weasel.commitment2050.commitmentanalysis.service.ReportLocalService" />
+	<bean class="fi.weasel.commitment2050.commitmentanalysis.service.persistence.impl.ReportPersistenceImpl" id="fi.weasel.commitment2050.commitmentanalysis.service.persistence.ReportPersistence" parent="basePersistence">
+		<property name="dataSource" ref="caDataSource" />
+	</bean>
+	<bean class="fi.weasel.commitment2050.commitmentanalysis.service.impl.ReportMeterLocalServiceImpl" id="fi.weasel.commitment2050.commitmentanalysis.service.ReportMeterLocalService" />
+	<bean class="fi.weasel.commitment2050.commitmentanalysis.service.persistence.impl.ReportMeterPersistenceImpl" id="fi.weasel.commitment2050.commitmentanalysis.service.persistence.ReportMeterPersistence" parent="basePersistence">
+		<property name="dataSource" ref="caDataSource" />
+	</bean>
+</beans>

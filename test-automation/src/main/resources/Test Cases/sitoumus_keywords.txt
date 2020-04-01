@@ -1,0 +1,297 @@
+*** Variables ***
+
+${BROWSER}				chrome
+#${URL}					http://localhost:8080/
+${URL}					http://sitoumus2050-test.eu-west-1.elasticbeanstalk.com/koti#/
+
+*** Keywords ***
+Close banner
+    sleep   0.5s
+    wait until element is visible   //*[@id="portalMessageContainer"]/button
+    click element   //*[@id="portalMessageContainer"]/button
+    sleep   0.7s
+
+Log in
+    [Arguments]   ${username}  ${password}
+    sleep   0.5s
+    wait until element is visible       //*[@id="sign-in"]
+    click element   //*[@id="sign-in"]
+    wait until element is visible       //*[@id="_com_liferay_login_web_portlet_LoginPortlet_login"]
+    input text  //*[@id="_com_liferay_login_web_portlet_LoginPortlet_login"]    ${username}
+    input text  //*[@id="_com_liferay_login_web_portlet_LoginPortlet_password"]     ${password}
+    click element   //span[text()='Kirjaudu sisään']
+
+Go to profile page
+    sleep   0.5s
+    wait until element is visible   xpath=//div[contains(text(),'Profiili')]
+    click element      xpath=//div[contains(text(),'Profiili')]
+
+Edit "${profile_input}" in own profile
+    ${input_field}=    set variable if
+    ...             "${profile_input}" == "first name"     //*[@id="profile_first_name"]
+    ...             "${profile_input}" == "last name"       //*[@id="profile_last_name"]
+    ...             "${profile_input}" == "city"        //*[@id="profile_city"]
+    #save orginal value
+    ${orginal_value}=    get value    ${input_field}
+    #input new value
+    input text  ${input_field}    robot_test
+    #save
+    click element   //*[@id="profile_save"]
+    # clear input field (set empty value)
+    input text  ${input_field}    ${EMPTY}
+    # check that field is empty
+    textfield should contain    ${input_field}    ${EMPTY}
+    #input orginal value
+    input text  ${input_field}    ${orginal_value}
+    #save
+    click element   //*[@id="profile_save"]
+
+Check that is possible to change password
+    element should be disabled      //*[@id="change_password_save_new_password"]
+    input text  //*[@id="change_password_new_password"]     robot_test
+    input text  //*[@id="change_password_new_password_confirmation"]        robot_test
+    element should be enabled   //*[@id="change_password_save_new_password"]
+
+Go to "${page}" page
+    wait until element is visible   //span[text()='${page}']
+    click element    //span[text()='${page}']
+
+Check "${commitment}" in Browsing commitments page
+    wait until element is visible   //span[text()='${commitment}']
+    click element   //span[text()='${commitment}']
+
+Uncheck "${commitment}" in Browsing commitments page
+    wait until element is visible   //span[text()='${commitment}']
+    click element   //span[text()='${commitment}']
+
+Check "${selection}" from "${menu}"
+    wait until element is visible   //span[text()='${menu}']
+    click element      //span[text()='${menu}']
+    wait until element is visible   //span[text()='${selection}']
+    click element     //span[text()='${selection}']
+    #close menu
+    click element   //span[text()='${menu}']
+
+Uncheck "${selection}" from "${menu}"
+    wait until element is visible   //span[text()='${menu}']
+    click element      //span[text()='${menu}']
+    wait until element is visible   //span[text()='${selection}']
+    click element     //span[text()='${selection}']
+    #close menu
+    click element   //span[text()='${menu}']
+
+Open first commitment on list
+    sleep   0.5s
+    wait until element is visible   //a[contains(@id,'commitment_listing_link_to_commitment')]
+    click element       //a[contains(@id,'commitment_listing_link_to_commitment')]
+
+Go back to browsing commitments
+    sleep   0.5s
+    wait until element is visible   //*[@id="commitment_details_link_to_list"]/button
+    click element   //*[@id="commitment_details_link_to_list"]/button
+
+Clear selections
+    wait until element is visible   //*[@id="commitment_listing_clear_filters"]
+    click element   //*[@id="commitment_listing_clear_filters"]
+
+Click Show more in Browsing commitments page
+    wait until element is visible   //*[@id="commitment_listing_show_more_commitments"]
+    click element   //*[@id="commitment_listing_show_more_commitments"]
+
+Search the word "${word}"
+    wait until element is visible   //*[@id="commitment_listing_search_field"]
+    input text      //*[@id="commitment_listing_search_field"]      ${word}
+    press key   //*[@id="commitment_listing_search_field"]     \\13
+
+Click Register in main page
+    wait until element is visible       //*[@id="navbar_signup_link"]
+    click element   //*[@id="navbar_signup_link"]
+
+Close register modal
+    wait until element is visible   //*[@id="register_modal_close_modal_button"]
+    click element   //*[@id="register_modal_close_modal_button"]
+    sleep   0.2s
+
+Click Registration by e-mail
+    wait until element is visible   //*[@id="register_modal_link_to_email_signup"]
+    click element   //*[@id="register_modal_link_to_email_signup"]
+
+Create new user
+    ${firstName}=   Generate Random String
+    ${lastName}=   Generate Random String
+    ${email}=  catenate  ${firstname}@test.com
+    Set test variable  ${FIRSTNAME}  ${firstName}
+    Set test variable  ${LASTNAME}   ${lastName}
+    Set test variable  ${EMAIL}      ${email}
+
+Input "${input}" to Registration by e-mail
+    ${input_field}=    set variable if
+    ...             "${input}" == "first name"     //*[@id="signup_first_name_field"]
+    ...             "${input}" == "last name"   //*[@id="signup_last_name_field"]
+    ...             "${input}" == "faulty e-mail"   //*[@id="signup_email_field"]
+    ...             "${input}" == "e-mail"   //*[@id="signup_email_field"]
+    ${text}=    set variable if
+    ...             "${input}" == "first name"     ${FIRSTNAME}
+    ...             "${input}" == "last name"   ${LASTNAME}
+    ...             "${input}" == "faulty e-mail"   ${LASTNAME}
+    ...             "${input}" == "e-mail"   ${EMAIL}
+    wait until element is visible      ${input_field}
+    input text     ${input_field}    ${text}
+
+Click Register in Registration by e-mail
+    wait until element is visible   //*[@id="signup_submit_registration"]
+    click element      //*[@id="signup_submit_registration"]
+
+Notice "${notice}" should appear
+    sleep   2s
+    page should contain     ${notice}
+
+Click OK
+    wait until element is visible       //button/div[text()='Ok']
+    click element        //button/div[text()='Ok']
+
+Go to make commitment in profile page
+    wait until element is visible      //*[@id="link_to_create_commitment"]
+    click element       //*[@id="link_to_create_commitment"]
+
+Select to participate "${value}"
+    wait until element is visible       //input[@placeholder="Valitse..."]
+    click element       //input[@placeholder="Valitse..."]
+    click element       //div[text()='${value}']
+
+Select "${commitment}" from commitments
+    wait until element is visible       //strong[text()='${commitment}']
+    click element   //strong[text()='${commitment}']
+
+Add information to commitment page
+    Create new commitment
+    #name
+    wait until element is visible      //input[@placeholder="Syötä sitoumuksen nimi"]
+    input text      //input[@placeholder="Syötä sitoumuksen nimi"]      ${NAME}
+    #start date
+    click element       //div[@placeholder="Aloitus"]
+    click element       //div[@aria-label="day-${START_DAY}"]
+    #end date
+    click element       //div[@placeholder="Lopetus"]
+    click element       //div[@aria-label="day-${END_DAY}"]
+    #commitment briefly
+    input text      //section[@class="portlet"]//textarea[1]  ${COM_BRIEFLY}
+    #add operation
+    wait until element is visible   //section[@class="portlet"]//h5[text()='Lisää toimenpide']
+    click element     //section[@class="portlet"]//h5[text()='Lisää toimenpide']
+    click element     //section[@class="portlet"]//select
+    wait until element is visible       xpath=//option[contains(text(),'Ajoneuvojen (ajokilometrien) CO2 päästöjen pienent')]
+    click element    xpath=//option[contains(text(),'Ajoneuvojen (ajokilometrien) CO2 päästöjen pienent')]
+    click element     //section[@class="portlet"]//h5[text()='Lisää mittari toimenpiteelle']
+    wait until element is visible       //*[@id="radio_label_choose_existing_meter_0_"]/span
+    click element     //*[@id="radio_label_choose_existing_meter_0_"]/span
+    click element    xpath=//option[contains(text(),'Ajokilometrit km')]
+    input text      //input[@placeholder="Aseta lähtötaso"]    1000
+    input text      //input[@placeholder="Aseta tavoitetaso"]    500
+    click element       //button/div[text()='Valmis']
+    #new to operation
+    input text     //section[@class="portlet"]//textarea[2]    ${NEW_TO_OPERATION}
+    #background information
+    input text      //section[@class="portlet"]//textarea[3]    ${BG_INFO}
+    #main goal
+    input text      //*[@id="downshift-2-input"]        Luontoa kunnioittava päätöksenteko
+
+Add information to nutrition commitment page
+    Create new commitment
+    #name
+    wait until element is visible      //input[@placeholder="Syötä sitoumuksen nimi"]
+    input text      //input[@placeholder="Syötä sitoumuksen nimi"]      ${NAME}
+    #start date
+    click element       //div[@placeholder="Aloitus"]
+    click element       //div[@aria-label="day-${START_DAY}"]
+    #end date
+    click element       //div[@placeholder="Lopetus"]
+    click element       //div[@aria-label="day-${END_DAY}"]
+    #commitment briefly
+    input text      //section[@class="portlet"]//textarea[1]  ${COM_BRIEFLY}
+    #content area
+    input text      //*[@id="downshift-2-input"]    Sokeri
+    click element       //section[@class="portlet"]//textarea[1]
+    #add operation
+    wait until element is visible   //section[@class="portlet"]//h5[text()='Lisää toimenpide']
+    click element     //section[@class="portlet"]//h5[text()='Lisää toimenpide']
+    wait until element is visible        //label[text()='Toimenpiteen nimi']//following-sibling::input
+    input text      //label[text()='Toimenpiteen nimi']//following-sibling::input   ${OPERATION}
+    input text       //label[text()='Toimenpiteen kuvaus']//following-sibling::input    ${DES_OPERATION}
+    click element     //section[@class="portlet"]//h5[text()='Lisää mittari toimenpiteelle']
+    wait until element is visible       //*[@id="radio_label_choose_existing_meter_0_"]/span
+    click element     //*[@id="radio_label_choose_existing_meter_0_"]/span
+    click element    xpath=//option[contains(text(),'Muovikierrätykseen viety määrä kg/á')]
+    input text      //input[@placeholder="Aseta lähtötaso"]    50
+    input text      //input[@placeholder="Aseta tavoitetaso"]    500
+    click element       //button/div[text()='Valmis']
+    #new to operation
+    input text     //section[@class="portlet"]//textarea[2]    ${NEW_TO_OPERATION}
+    #background information
+    input text      //section[@class="portlet"]//textarea[3]    ${BG_INFO}
+
+Add information to green deal page
+    Create new commitment
+    #name
+    wait until element is visible      //input[@placeholder="Syötä sitoumuksen nimi"]
+    input text      //input[@placeholder="Syötä sitoumuksen nimi"]      ${NAME}
+    #start date
+    click element       //div[@placeholder="Aloitus"]
+    click element       //div[@aria-label="day-${START_DAY}"]
+    #end date
+    click element       //div[@placeholder="Lopetus"]
+    click element       //div[@aria-label="day-${END_DAY}"]
+    #commitment briefly
+    input text      //section[@class="portlet"]//textarea[1]  ${COM_BRIEFLY}
+    #add operation
+    wait until element is visible   //section[@class="portlet"]//h5[text()='Lisää toimenpide']
+    click element     //section[@class="portlet"]//h5[text()='Lisää toimenpide']
+    wait until element is visible        //label[text()='Toimenpiteen nimi']//following-sibling::input
+    input text      //label[text()='Toimenpiteen nimi']//following-sibling::input   ${OPERATION}
+    input text       //label[text()='Toimenpiteen kuvaus']//following-sibling::input    ${DES_OPERATION}
+    click element     //section[@class="portlet"]//h5[text()='Lisää mittari toimenpiteelle']
+    wait until element is visible       //*[@id="new_meter_name_0"]
+    input text      //*[@id="new_meter_name_0"]      ${METER_NAME}
+    click element       //*[@id="radio_label_meter_id_number_0"]
+    input text      //input[@placeholder="Aseta lähtötaso"]     0
+    input text      //input[@placeholder="Aseta tavoitetaso"]   100
+    click element       //button/div[text()='Valmis']
+    #new to operation
+    input text     //section[@class="portlet"]//textarea[2]    ${NEW_TO_OPERATION}
+    #background information
+    input text      //section[@class="portlet"]//textarea[3]    ${BG_INFO}
+    #main goal
+    input text      //*[@id="downshift-2-input"]        Hiilineutraali yhteiskunta
+
+Create new commitment
+    ${name}=   Generate Random String
+    ${date}=   Get Current Date
+    ${start_day} =	Convert Date	${date}	result_format=%d
+    ${end_day}=    Add Time To Date    ${date}   10 days    result_format=%d
+    ${commitment_birefly}=   Generate Random String    200
+    ${operation}=   Generate Random String    10
+    ${description_of_operation}=   Generate Random String    15
+    ${meter_name}=   Generate Random String    10
+    ${new_to_operation}=   Generate Random String    150
+    ${background_info}=   Generate Random String    250
+    Set test variable  ${NAME}  ${name}
+    Set test variable   ${START_DAY}   ${start_day}
+    Set test variable   ${END_DAY}   ${end_day}
+    Set test variable   ${COM_BRIEFLY}   ${commitment_birefly}
+    Set test variable   ${OPERATION}   ${operation}
+    Set test variable   ${DES_OPERATION}   ${description_of_operation}
+    Set test variable   ${METER_NAME}   ${meter_name}
+    Set test variable   ${NEW_TO_OPERATION}   ${new_to_operation}
+    Set test variable   ${BG_INFO}   ${background_info}
+
+Save draft in commitment page
+    wait until element is visible       //button/div[text()='Tallenna luonnos']
+    click element       //button/div[text()='Tallenna luonnos']
+
+Send for inspection in commitment page
+    wait until element is visible       //button/div[text()='Lähetä tarkastettavaksi']
+    click element       //button/div[text()='Lähetä tarkastettavaksi']
+
+#scroll page to "${x_location},${y_location}"
+    #Execute JavaScript    window.scrollTo(${x_location},${y_location})
+

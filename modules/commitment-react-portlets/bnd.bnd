@@ -1,0 +1,5 @@
+Bundle-Name: commitment-react-portlets
+Bundle-SymbolicName: com.soikea.commitment2050.portlets
+Bundle-Version: 1.0.0
+Export-Package: com.soikea.commitment2050.constants
+Web-ContextPath: /commitment-react-portlets

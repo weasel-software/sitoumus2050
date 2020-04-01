@@ -1,0 +1,6 @@
+Bundle-Name: commitment2050-service
+Bundle-SymbolicName: com.soikea.commitment2050.service
+Bundle-Version: 1.0.0
+-metatype: *
+Liferay-Configuration-Path: /configuration
+Export-Package: org.json.*

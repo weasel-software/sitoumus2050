@@ -1,0 +1,10 @@
+{
+  "LiferayPlugin": {
+    "appServerPath": "./../bundles/tomcat-8.0.32",
+    "deployPath": "./../bundles/deploy",
+    "url": "http://localhost:8080",
+    "appServerPathPlugin": "./../bundles/tomcat-8.0.32/webapps/frontpage-layouttpl",
+    "deployed": false,
+    "pluginName": "sitoumus-layouts"
+  }
+}

@@ -1,0 +1,5 @@
+Bundle-Name: editor-config
+Bundle-SymbolicName: com.soikea.sitoumus.editorconfig
+Bundle-Version: 1.0.0
+Export-Package: com.soikea.sitoumus.editorconfig
+

@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping auto-import="false" default-lazy="false">
+	<import class="fi.weasel.commitment2050.commitmentanalysis.model.Commitment" />
+	<import class="fi.weasel.commitment2050.commitmentanalysis.model.CommitmentAnalysisResult" />
+	<import class="fi.weasel.commitment2050.commitmentanalysis.model.DoneOperation" />
+	<import class="fi.weasel.commitment2050.commitmentanalysis.model.Meter" />
+	<import class="fi.weasel.commitment2050.commitmentanalysis.model.Operation" />
+	<import class="fi.weasel.commitment2050.commitmentanalysis.model.Report" />
+	<import class="fi.weasel.commitment2050.commitmentanalysis.model.ReportMeter" />
+	<class name="fi.weasel.commitment2050.commitmentanalysis.model.impl.CommitmentImpl" table="CA_Commitment">
+		<id name="commitmentId" type="java.lang.String">
+			<generator class="assigned" />
+		</id>
+		<property name="groupId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="companyId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="organizationId" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="userId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="userName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="createDate" type="org.hibernate.type.TimestampType" />
+		<property name="modifiedDate" type="org.hibernate.type.TimestampType" />
+		<property name="titleFI" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="titleEN" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="titleSV" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="startDate" type="org.hibernate.type.TimestampType" />
+		<property name="endDate" type="org.hibernate.type.TimestampType" />
+		<property name="updated" type="org.hibernate.type.TimestampType" />
+		<property name="created" type="org.hibernate.type.TimestampType" />
+		<property name="innovationFI" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="innovationEN" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="innovationSV" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="backgroundInformationFI" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="backgroundInformationEN" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="backgroundInformationSV" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="shortDescriptionFI" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="shortDescriptionEN" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="shortDescriptionSV" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="address" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="longitude" type="com.liferay.portal.dao.orm.hibernate.DoubleType" />
+		<property name="latitude" type="com.liferay.portal.dao.orm.hibernate.DoubleType" />
+		<property name="commitmentType" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="status" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="likes" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property name="joined" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+	</class>
+	<class name="fi.weasel.commitment2050.commitmentanalysis.model.impl.CommitmentAnalysisResultImpl" table="CA_Results">
+		<id name="id" type="java.lang.String">
+			<generator class="assigned" />
+		</id>
+		<property name="resultType" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="resultData" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="calculated" type="org.hibernate.type.TimestampType" />
+		<property name="success" type="com.liferay.portal.dao.orm.hibernate.BooleanType" />
+	</class>
+	<class name="fi.weasel.commitment2050.commitmentanalysis.model.impl.DoneOperationImpl" table="CA_DoneOperation">
+		<id name="id" type="java.lang.String">
+			<generator class="assigned" />
+		</id>
+		<property name="commitmentId" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="operationId" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="operationCategory" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="operationTitleFI" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="operationTitleSV" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="operationTitleEN" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+	<class name="fi.weasel.commitment2050.commitmentanalysis.model.impl.MeterImpl" table="CA_Meter">
+		<id name="id" type="java.lang.String">
+			<generator class="assigned" />
+		</id>
+		<property name="commitmentId" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="operationId" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="meterId" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="meterCategory" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="meterChartType" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="meterValueType" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="meterTypeFI" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="meterTypeSV" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="meterTypeEN" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="startingLevel" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="targetLevel" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+	<class name="fi.weasel.commitment2050.commitmentanalysis.model.impl.OperationImpl" table="CA_Operation">
+		<id name="id" type="java.lang.String">
+			<generator class="assigned" />
+		</id>
+		<property name="commitmentId" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="operationId" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="operationCategory" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="operationTitleFI" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="operationTitleSV" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="operationTitleEN" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="operationDescriptionFI" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="operationDescriptionSV" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="operationDescriptionEN" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+	<class name="fi.weasel.commitment2050.commitmentanalysis.model.impl.ReportImpl" table="CA_Report">
+		<id name="id" type="java.lang.String">
+			<generator class="assigned" />
+		</id>
+		<property name="reportId" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="operationId" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="commitmentId" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="createdByUserId" type="com.liferay.portal.dao.orm.hibernate.IntegerType" />
+		<property name="createdByUserName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="organizationName" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="progress" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="reportStartDate" type="org.hibernate.type.TimestampType" />
+		<property name="reportEndDate" type="org.hibernate.type.TimestampType" />
+		<property name="reportStatus" type="com.liferay.portal.dao.orm.hibernate.BooleanType" />
+		<property name="reportTextFI" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="reportTextSV" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="reportTextEN" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="reportTitleFI" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="reportTitleSV" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="reportTitleEN" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="status" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="version" type="com.liferay.portal.dao.orm.hibernate.DoubleType" />
+	</class>
+	<class name="fi.weasel.commitment2050.commitmentanalysis.model.impl.ReportMeterImpl" table="CA_ReportMeter">
+		<id name="id" type="java.lang.String">
+			<generator class="assigned" />
+		</id>
+		<property name="commitmentId" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="operationId" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="reportId" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="meterId" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="meterCategory" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="meterChartType" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="meterValueType" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="meterTypeFI" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="meterTypeSV" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="meterTypeEN" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="currentLevel" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="startingLevel" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="targetLevel" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+</hibernate-mapping>

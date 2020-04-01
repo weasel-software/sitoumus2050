@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+
+<root available-locales="fi_FI" default-locale="fi_FI">
+    <dynamic-element name="startDate" type="ddm-date" index-type="keyword" instance-id="zjnb">
+        <dynamic-content language-id="fi_FI"><![CDATA[2018-05-01]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="endDate" type="ddm-date" index-type="keyword" instance-id="enqa">
+        <dynamic-content language-id="fi_FI"><![CDATA[2018-06-30]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="shortDescription" type="text_box" index-type="text" instance-id="oxmt">
+        <dynamic-content language-id="fi_FI"><![CDATA[Sittest testisitoumus lyhyesti]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="backgroundInformation" type="text_box" index-type="text" instance-id="zgba">
+        <dynamic-content language-id="fi_FI"><![CDATA[Sittest testisitoumus taustatietoa]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="innovation" type="text_box" index-type="text" instance-id="nnmc">
+        <dynamic-content language-id="fi_FI"><![CDATA[Sittest testisitoumus mitä uutta]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="operationTitle" type="text_box" index-type="text" instance-id="ejdg">
+        <dynamic-element name="operationId" instance-id="erdy" type="text" index-type="keyword">
+            <dynamic-content language-id="fi_FI"><![CDATA[operation1234]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="operationDescription" instance-id="zqbk" type="text_box" index-type="text">
+            <dynamic-content language-id="fi_FI"><![CDATA[Sittest testisitoumus toimenpide kuvaus]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="meterType" instance-id="dltw" type="text" index-type="keyword">
+            <dynamic-element name="meterId" instance-id="ifsq" type="text" index-type="keyword">
+                <dynamic-content language-id="fi_FI"><![CDATA[meter1234]]></dynamic-content>
+            </dynamic-element>
+            <dynamic-element name="meterValueType" instance-id="rsoh" type="text" index-type="keyword">
+                <dynamic-content language-id="fi_FI"><![CDATA[NUMBER]]></dynamic-content>
+            </dynamic-element>
+            <dynamic-element name="startingLevel" instance-id="pkrr" type="text" index-type="keyword">
+                <dynamic-content language-id="fi_FI"><![CDATA[300 kpl]]></dynamic-content>
+            </dynamic-element>
+            <dynamic-element name="targetLevel" instance-id="lcos" type="text" index-type="keyword">
+                <dynamic-content language-id="fi_FI"><![CDATA[500 kpl]]></dynamic-content>
+            </dynamic-element>
+            <dynamic-element name="meterChartType" instance-id="xbfg" type="text" index-type="keyword">
+                <dynamic-content language-id="fi_FI"><![CDATA[]]></dynamic-content>
+            </dynamic-element>
+            <dynamic-content language-id="fi_FI"><![CDATA[Sittest testisitoumus Mittari]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-content language-id="fi_FI"><![CDATA[Sittest testisitoumus toimenpide]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="address" type="text" index-type="keyword" instance-id="qaeh">
+        <dynamic-content language-id="fi_FI"><![CDATA[Jyväskylä, Suomi]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="geolocation" type="ddm-geolocation" index-type="keyword" instance-id="gyig">
+        <dynamic-content language-id="fi_FI"><![CDATA[{"latitude":"61.921586967641","longitude":"25.744749037225"}]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="reportingInterval" type="text" index-type="keyword" instance-id="hkyn">
+        <dynamic-content language-id="fi_FI"><![CDATA[MONTH_3]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="reportReminder" type="boolean" index-type="keyword" instance-id="bmmv">
+        <dynamic-content language-id="fi_FI"><![CDATA[true]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="acceptCriterias" type="boolean" index-type="keyword" instance-id="jwqs">
+        <dynamic-content language-id="fi_FI"><![CDATA[true]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="commitmentImageUrl" type="document_library" index-type="keyword" instance-id="ybfk">
+        <dynamic-content language-id="fi_FI"><![CDATA[/documents/20143/31499/mustikat.jpeg/e76245fa-75c4-0c9a-ac6a-6065bc9efbe1?t=1521595261304]]></dynamic-content>
+    </dynamic-element>
+</root>

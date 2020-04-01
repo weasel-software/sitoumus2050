@@ -1,0 +1,30 @@
+%button {
+  border-radius: 2px;
+  box-sizing: border-box;
+  font-family: 'Open Sans';
+  font-size: 16px;
+  min-width: 200px;
+  padding: 18px 36px;
+}
+
+%button-green {
+  @extend %button;
+  background: #93be38;
+  border: 1px solid #93be38;
+  color: white;
+
+  &:hover {
+    background-color: #75982c;
+  }
+}
+
+%button-white {
+  @extend %button;
+  background: white;
+  border: 1px solid #93be38;
+  color: #93be38;
+
+  &:hover {
+    background: #f4f4f4;
+  }
+}

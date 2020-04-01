@@ -1,0 +1,43 @@
+{
+    "URL": "https://elamantapatesti.sitra.fi/",
+    "HOME_URL": "/",
+    "RESULT_URL": "/tulos",
+    "BACK": "Edellinen kysymys",
+    "CONTINUE": "JATKA",
+    "YOUR_FOOTPRINT": "Hiilijalanjälkesi",
+    "AVERAGE_FOOTPRINT": "Keskimääräinen testin tehneen hiilijalanjälki",
+    "SHOW_RESULTS": "NÄYTÄ TULOKSET",
+    "HEADING":"Kestävät elämäntavat",
+    "TEST":"Testi",
+    "META": {
+        "TITLE": "Elämäntapatesti",
+        "DESCRIPTION": "Ovatko elämäntapasi ympäristön puolella vai sitä vastaan? Pikatestin tuloksena saat sinulle räätälöityjä vinkkejä, joilla säästät aikaa ja rahaa sekä parannat elämänlaatuasi. Ja luonto kiittää!"
+    },
+    "RESULT": {
+        "HEADING": "Kestävät elämäntavat",
+        "SUBHEADING": "Testin tulos",
+        "CALCULATIONS_TEXT": "Lisätietoa laskennasta ja keskivertosuomalaisen hiilijalanjäljestä",
+        "CALCULATIONS_URL": "/documents/20143/71604/FIN_Kestavat_elamantavat_testin_laskenta.pdf",
+        "RESULT": "Kestävät elämäntavat testin tulos",
+        "TARGET": "Asettamani tavoite",
+        "TARGET-TEXT-1": "Tavoitteeni on",
+        "TARGET-TEXT-2": "pienempi hiilijalanjälki. Aloitan ilmastovaikutusteni puolittamisen tällä suunnitelmalla.",
+        "TARGET-TEXT-3": "Tavoite asetettu ja teot valittu? Luo seuraavaksi suunnitelmastasi oma sitoumuksesi.",
+        "CONTINUE": "JATKA SITOUMUKSEEN",
+        "CO2E-INFO": "Hiilijalanjäljellä tarkoitetaan ihmisen toiminnan aiheuttamia hiilidioksidipäästöjä. Hiilijalanjälki ilmoitetaan hiilidioksidiekvivalentteina (CO2e), mikä huomioi hiilidioksidipäästöjen lisäksi myös muut merkittävät kasvihuonekaasupäästöt, kuten metaanin ja ilokaasun",
+        "NO-TODOS": "Poimi sitoumukseesi vähintään yksi teko."
+    },
+    "TIP": {
+        "HEADING": "Puolita hiilijalanjälkesi poimimalla sinulle sopivat teot",
+        "INTRO": "Hyvä suunnitelma on korvaamaton apulainen matkallasi kohti kestävämpiä elämäntapoja. Valitse ensin millaisilla arjen fiksuilla teoilla saat puolitettua oman hiilijalanjälkesi. Näet kunkin teon kohdalla kuinka monta prosenttia teko pienentäisi sinun testitulostasi. Valitse myös ne teot, jotka toteutuvat arjessasi. Seuraavassa vaiheessa voit vielä lisätä tekoja ja tallentaa sitoumukseesi.",
+        "SPACER-TEXT": "sinulle suositeltavaa tekoa testin vastausten perusteella",
+        "REDUCTION": "Vähennyksesi",
+        "TIPS": "tekoa",
+        "SHOW-MORE": "Näytä {{ value }} tekoa lisää",
+        "SHOW-LESS": "Näytä vähemmän"
+    },
+    "TIP-ROW": {
+        "DONE": "Tämän teen jo",
+        "PICK": "Poimin sitoumukseeni"
+    }
+}

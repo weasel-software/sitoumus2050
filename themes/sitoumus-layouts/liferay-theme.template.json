@@ -1,0 +1,9 @@
+{
+  "LiferayTheme": {
+    "deployPath": "../bundles/tomcat-8.0.32",
+    "themeName": "sitoumus-layouts",
+    "appServerPathTheme": "../bundles/tomcat-8.0.32/webapps/sitoumus-layouts",
+    "deployed": false,
+    "appServerPath": "../bundles/tomcat-8.0.32"
+  }
+}

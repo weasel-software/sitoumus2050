@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<beans default-destroy-method="destroy" default-init-method="afterPropertiesSet"
+       xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean class="com.liferay.portal.dao.jdbc.spring.DataSourceFactoryBean"
+          id="liferayDataSourceFactory">
+        <property name="propertyPrefix" value="jdbc.ca." />
+    </bean>
+
+    <bean class="org.springframework.jdbc.datasource.LazyConnectionDataSourceProxy"
+            id="liferayDataSource">
+        <property name="targetDataSource" ref="liferayDataSourceFactory" />
+    </bean>
+
+    <alias alias="caDataSource" name="liferayDataSource" />
+
+    <!--
+    If you are trying to add multiple custom data sources, good luck!
+    You must have a different Service Builder module for each custom data source.
+    -->
+
+    <!--<bean class="com.liferay.portal.dao.jdbc.spring.DataSourceFactoryBean"
+          id="statisticsDataSourceFactory">
+        <property name="propertyPrefix" value="jdbc.statistics." />
+    </bean>
+
+    <bean class="org.springframework.jdbc.datasource.LazyConnectionDataSourceProxy"
+          id="statisticsDataSource">
+        <property name="targetDataSource" ref="statisticsDataSourceFactory" />
+    </bean>-->
+</beans>

@@ -1,0 +1,43 @@
+{
+    "URL": "https://livsstilstest.sitra.fi/",
+    "HOME_URL": "/",
+    "RESULT_URL": "/resultat",
+    "BACK": "Tillbaka",
+    "CONTINUE": "FORTSÄTT",
+    "YOUR_FOOTPRINT": "Ditt koldioxidavtryck",
+    "AVERAGE_FOOTPRINT": "Det genomsnittliga koldioxidavtrycket för de som tagit testet",
+    "SHOW_RESULTS": "VISA RESULTAT",
+    "HEADING":"Hållbara levnadssätt",
+    "TEST":"Test",
+    "META": {
+        "TITLE": "Livsstilstest",
+        "DESCRIPTION": "Är din livsstil på miljöns sida eller emot den? Som resultat av snabbtestet får du för dig anpassade tips, med vilka du sparar tid och pengar samt förbättrar din livskvalitet. Och naturen tackar!"
+    },
+    "RESULT": {
+        "HEADING": "Hållbara levnadssätt",
+        "SUBHEADING": "Testets resultat",
+        "CALCULATIONS_TEXT": "Läs mer om beräkningen och koldioxidavtrycket för en genomsnittlig finländare",
+        "CALCULATIONS_URL": "/documents/20143/71604/SVE_Kestavat_elamantavat_testin_laskenta.pdf",
+        "RESULT": "Hållbara levnadssätt-testets resultat",
+        "TARGET": "Mitt satta mål",
+        "TARGET-TEXT-1": "Mitt mål är",
+        "TARGET-TEXT-2": "mindre koldioxidavtryck. Jag kommer att börja halvera min klimatpåverkan med denna plan.",
+        "TARGET-TEXT-3": "Målet satt och åtgärder valda? Skapa därefter din plan från ditt åtagande. Luo seuraavaksi suunnitelmastasi oma sitoumuksesi.",
+        "CONTINUE": "FORTSÄTT TILL ÅTAGANDET",
+        "CO2E-INFO": "Med koldioxidavtryck avses koldioxidutsläpp som orsakats av mänsklig aktivitet. Koldioxidavtryck mäts i koldioxidekvivalenter (CO2e), som inte enbart tar hänsyn till koldioxidutsläpp utan även andra betydande utsläpp av växthusgaser som metan och lustgas",
+        "NO-TODOS": "Ta med minst en handling till ditt åtagande."
+    },
+    "TIP": {
+        "HEADING": "Halvera ditt koldioxidavtryck genom att välja det som fungerar för dig",
+        "INTRO": "En bra plan är en ovärderlig assistent på din resa mot en mer hållbar livsstil. Välj först vilka smarta vardagliga åtgärder du kan vidta för att halvera ditt koldioxidavtryck. För varje åtgärd ser du hur mycket åtgärden skulle minska ditt testresultat. Välj också vilka åtgärder som ska implementeras i ditt dagliga liv redan nu. I nästa steg kan du fortfarande lägga till fler gärningar och spara på ditt åtagande.",
+        "SPACER-TEXT": "REKOMMENDERADE ÅTGÄRDER PÅ GRUND AV DINA TESTSVAR",
+        "REDUCTION": "Ditt avdrag",
+        "TIPS": "handling",
+        "SHOW-MORE": "Visa {{ value }} åtgärder till",
+        "SHOW-LESS": "Visa färre"
+    },
+    "TIP-ROW": {
+        "DONE": "Det här gör jag redan",
+        "PICK": "Ta med i mitt åtagande"
+    }
+}

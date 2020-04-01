@@ -1,0 +1,105 @@
+title {label: "Commitment Analysis Entity-Relationship Diagram"}
+
+[CA_Commitment]
+*commitmentId {label: "VARCHAR(75)"}
+groupId {label: "BIGINT(20)"}
+companyId {label: "BIGINT(20)"}
+userId {label: "BIGINT(20)"}
+userName {label: "VARCHAR(75)"}
+organizationId {label: "VARCHAR(75)"}
+createDate {label: "DATETIME(6)"}
+modifiedDate {label: "DATETIME(6)"}
+titleFI {label: "LONGTEXT"}
+titleEN {label: "LONGTEXT"}
+titleSV {label: "LONGTEXT"}
+startDate {label: "DATETIME(6)"}
+endDate {label: "DATETIME(6)"}
+updated {label: "DATETIME(6)"}
+created {label: "DATETIME(6)"}
+innovationFI {label: "LONGTEXT"}
+innovationEN {label: "LONGTEXT"}
+innovationSV {label: "LONGTEXT"}
+backgroundInformationFI {label: "LONGTEXT"}
+backgroundInformationEN {label: "LONGTEXT"}
+backgroundInformationSV {label: "LONGTEXT"}
+shortDescriptionFI {label: "LONGTEXT"}
+shortDescriptionEN {label: "LONGTEXT"}
+shortDescriptionSV {label: "LONGTEXT"}
+createdByUserId {label: "INT(11)"}
+address {label: "LONGTEXT"}
+longitude {label: "DOUBLE"}
+latitude {label: "DOUBLE"}
+commitmentType {label: "VARCHAR(75)"}
+status {label: "VARCHAR(75)"}
+likes {label: "INT(11)"}
+joined {label: "INT(11)"}
+
+[CA_Operation]
+*id_ {label: "VARCHAR(75)"}
++commitmentId {label: "VARCHAR(75)"}
++operationId {label: "VARCHAR(75)"}
+operationCategory {label: "VARCHAR(75)"}
+
+[CA_Meter]
+*id_ {label: "VARCHAR(75)"}
++commitmentId {label: "VARCHAR(75)"}
++operationId {label: "VARCHAR(75)"}
+meterId {label: "VARCHAR(75)"}
+meterCategory {label: "VARCHAR(75)"}
+meterChartType {label: "VARCHAR(75)"}
+meterValueType {label: "VARCHAR(75)"}
+meterTypeFI {label: "LONGTEXT"}
+meterTypeSV {label: "LONGTEXT"}
+meterTypeEN {label: "LONGTEXT"}
+startingLevel {label: "VARCHAR(75)"}
+targetLevel {label: "VARCHAR(75)"}
+
+[CA_Report]
+*id_ {label: "VARCHAR(75)"}
++reportId {label: "VARCHAR(75)"}
++operationId {label: "VARCHAR(75)"}
++commitmentId {label: "VARCHAR(75)"}
+createdByUserId {label: "INT(11)"}
+createdByUserName {label: "LONGTEXT"}
+organizationName {label: "LONGTEXT"}
+progress {label: "VARCHAR(75)"}
+reportStartDate {label: "DATETIME(6)"}
+reprtEndDate {label: "DATETIME(6)"}
+reportStatus {label: "TINYINT(4)"}
+reportTextFI {label: "LONGTEXT"}
+reportTextSV {label: "LONGTEXT"}
+reportTextEN {label: "LONGTEXT"}
+reportTitleFI {label: "LONGTEXT"}
+reportTitleSV {label: "LONGTEXT"}
+reportTitleEN {label: "LONGTEXT"}
+status {label: "VARCHAR(75)"}
+version {label: "DOUBLE"}
+
+[CA_ReportMeter]
+*id_ {label: "VARCHAR(75)"}
++commitmentId {label: "VARCHAR(75)"}
++operationId {label: "VARCHAR(75)"}
++reportId {label: "VARCHAR(75)"}
+meterId {label: "VARCHAR(75)"}
+meterCategory {label: "VARCHAR(75)"}
+meterChartType {label: "VARCHAR(75)"}
+meterValueType {label: "VARCHAR(75)"}
+meterTypeFI {label: "LONGTEXT"}
+meterTypeSV {label: "LONGTEXT"}
+meterTypeEN {label: "LONGTEXT"}
+currentLevel {label: "VARCHAR(75)"}
+startingLevel {label: "VARCHAR(75)"}
+targetLevel {label: "VARCHAR(75)"}
+
+[CA_DoneOperation]
+*id_ {label: "VARCHAR(75)"}
++commitmentId {label: "VARCHAR(75)"}
++operationId {label: "VARCHAR(75)"}
+operationCategory {label: "VARCHAR(75)"}
+
+CA_Commitment 1--* CA_Operation
+CA_Operation 1--* CA_Meter
+CA_Commitment 1--* CA_Report {label: "generic"}
+CA_Operation 1--* CA_Report
+CA_Report 1--* CA_ReportMeter
+CA_Commitment 1--* CA_DoneOperation

@@ -1,0 +1,45 @@
+{
+    "URL": "https://lifestyletest.sitra.fi/",
+    "HOME_URL": "/test",
+    "RESULT_URL": "/result",
+    "BACK": "Back",
+    "CONTINUE": "CONTINUE",
+    "YOUR_FOOTPRINT": "Your carbon footprint",
+    "AVERAGE_FOOTPRINT": "Average carbon footprint of people who took the test",
+    "SHOW_RESULTS": "SHOW THE RESULTS",
+    "HEADING":"Sustainable lifestyle",
+    "TEST":"Test",
+    "META": {
+        "TITLE": "Lifestyle test",
+        "DESCRIPTION": "Is your lifestyle good or bad for the environment? After this short test, you will get tips tailored for you. They will help you save time and money and improve your quality of life. And our planet will thank you!"
+    },
+    "RESULT": {
+        "HEADING": "Sustainable lifestyle",
+        "SUBHEADING": "Result of the test",
+        "GRAPH_TEXT": "Carbon footprint of an average Finn",
+        "GRAPH_URL": "/Sitra-Keskivertosuomalainen-graafit-EN.pdf",
+        "CALCULATIONS_TEXT": "More information on the calculations and carbon footprint of an average Finn",
+        "CALCULATIONS_URL": "/documents/20143/71604/ENG_Kestavat_elamantavat_testin_laskenta.pdf",
+        "RESULT": "Result of the sustainable lifestyle test",
+        "TARGET": "My set target",
+        "TARGET-TEXT-1": "My target is a",
+        "TARGET-TEXT-2": "smaller carbon footprint. I start halving my climate impact with this plan.",
+        "TARGET-TEXT-3": "Have you set your target and chosen your actions? Next, use your plan to create your personal commitment.",
+        "CONTINUE": "On to the commitment",
+        "CO2E-INFO": "Carbon footprint refers to carbon dioxide emissions from human activity. Carbon Footprint is reported as carbon dioxide equivalents (CO2e), which takes into account not only carbon dioxide emissions, but also other significant greenhouse gas emissions such as methane and nitrous oxide.",
+        "NO-TODOS": "Pick at least one action for your commitment."
+    },
+    "TIP": {
+        "HEADING": "Halve your carbon footprint by picking and choosing the actions best suited for you",
+        "INTRO": "A good plan is an irreplaceable helper on your journey towards a more sustainable lifestyle. First, pick which of the ways to live sustainably will help you halve your carbon footprint. Next to each action, you will see how many percent the result you got from the test will decrease when you complete it. You can also choose the actions that you are already doing in your everyday life. The second step allows you to add actions to your commitment and save it.",
+        "SPACER-TEXT": "ACTIONS FOR YOU BASED ON YOUR ANSWERS",
+        "REDUCTION": "Your reduction",
+        "TIPS": "actions",
+        "SHOW-MORE": "Show {{ value }} more actions",
+        "SHOW-LESS": "Show less"
+    },
+    "TIP-ROW": {
+        "DONE": "Already doing this",
+        "PICK": "Pick this action"
+    }
+}

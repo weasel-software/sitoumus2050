@@ -1,0 +1,56 @@
+<div class="tips">
+    <div class="tips__heading">
+        <h2>{{ 'TIP.HEADING' | translate }}</h2>
+        <p>{{ 'TIP.INTRO' | translate }}</p>
+    </div>
+
+    <div class="tips__spacer">
+        <span>{{ tips.length }} {{ 'TIP.SPACER-TEXT' | translate }}</span>
+    </div>
+</div>
+
+<ng-container *ngIf="categories">
+    <div class="category" *ngFor="let category of categories" [id]="category._id">
+        <div class="category-heading {{ 'category-heading--' + category.color }}">
+            <img class="category-heading__icon" [src]="'/o/sitoumus-2050-theme/eltest/assets/images/' +
+                category.icon"
+                alt="">
+            <div class="category-heading__text-container">
+                <span class="category-heading__name">{{ category.title[translate.currentLang] }}</span>
+                <span class="category-heading__decrease">
+                    {{ 'TIP.REDUCTION' | translate }}
+                    <span>-{{ categoryTodoReduction(category) }}%</span>
+                </span>
+                <span class="category-heading__count">{{ category.tips.length
+                    }} {{ 'TIP.TIPS' | translate }}</span>
+            </div>
+        </div>
+        <ng-container *ngFor="let tip of category.tips; let i= index">
+            <div class="tip-wrapper" *ngIf="i <3" [@expand]="">
+                <app-tip-row [tip]="tip" [expanded]="tip === expandedTip"
+                    (expand)="expandTip($event)" (toggleTip)="toggleTip($event,
+                    category)"></app-tip-row>
+            </div>
+        </ng-container>
+        <div *ngIf="category.tips.length> 3 && expandedCategory === category"
+            [@expand]="">
+            <ng-container *ngFor="let tip of category.tips; let i= index">
+                <div class="tip-wrapper" *ngIf="i> 3">
+                    <app-tip-row [tip]="tip" [expanded]="tip === expandedTip"
+                        (expand)="expandTip($event)"
+                        (toggleTip)="toggleTip($event, category)"></app-tip-row>
+                </div>
+            </ng-container>
+        </div>
+        <div class="show-more" *ngIf="category.tips.length> 3">
+            <button (click)="expandCategory(category)">
+                <span *ngIf="category !== expandedCategory">
+                    {{ 'TIP.SHOW-MORE' | translate : { value: category.tips.length - 4 } }}
+                </span>
+                <span *ngIf="category === expandedCategory">
+                    {{ 'TIP.SHOW-LESS' | translate }}
+                </span>
+            </button>
+        </div>
+    </div>
+</ng-container>

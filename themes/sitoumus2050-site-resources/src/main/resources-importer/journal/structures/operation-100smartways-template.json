@@ -1,0 +1,288 @@
+{
+  "availableLanguageIds": [
+    "fi_FI"
+  ],
+  "defaultLanguageId": "fi_FI",
+  "fields": [
+    {
+      "label": {
+        "fi_FI": "Testin Id"
+      },
+      "predefinedValue": {
+        "fi_FI": ""
+      },
+      "style": {
+        "fi_FI": ""
+      },
+      "tip": {
+        "fi_FI": ""
+      },
+      "dataType": "string",
+      "indexType": "keyword",
+      "localizable": true,
+      "name": "testId",
+      "readOnly": false,
+      "repeatable": false,
+      "required": false,
+      "showLabel": true,
+      "type": "text"
+    },
+    {
+      "label": {
+        "fi_FI": "Toimenpide"
+      },
+      "predefinedValue": {
+        "fi_FI": ""
+      },
+      "style": {
+        "fi_FI": ""
+      },
+      "tip": {
+        "fi_FI": "Toimenpiteen nimi"
+      },
+      "dataType": "string",
+      "indexType": "keyword",
+      "localizable": true,
+      "name": "title",
+      "readOnly": false,
+      "repeatable": false,
+      "required": false,
+      "showLabel": true,
+      "type": "text"
+    },
+    {
+      "label": {
+        "fi_FI": "Kuvaus"
+      },
+      "predefinedValue": {
+        "fi_FI": ""
+      },
+      "style": {
+        "fi_FI": ""
+      },
+      "tip": {
+        "fi_FI": ""
+      },
+      "dataType": "html",
+      "fieldNamespace": "ddm",
+      "indexType": "text",
+      "localizable": true,
+      "name": "description",
+      "readOnly": false,
+      "repeatable": false,
+      "required": false,
+      "showLabel": true,
+      "type": "ddm-text-html"
+    },
+    {
+      "label": {
+        "fi_FI": "Teon tiivistelmä"
+      },
+      "predefinedValue": {
+        "fi_FI": ""
+      },
+      "style": {
+        "fi_FI": ""
+      },
+      "tip": {
+        "fi_FI": ""
+      },
+      "dataType": "string",
+      "indexType": "text",
+      "localizable": true,
+      "name": "punchLine",
+      "readOnly": false,
+      "repeatable": false,
+      "required": false,
+      "showLabel": true,
+      "type": "textarea"
+    },
+    {
+      "label": {
+        "fi_FI": "Kuva"
+      },
+      "predefinedValue": {
+        "fi_FI": ""
+      },
+      "style": {
+        "fi_FI": ""
+      },
+      "tip": {
+        "fi_FI": ""
+      },
+      "dataType": "document-library",
+      "fieldNamespace": "ddm",
+      "indexType": "keyword",
+      "localizable": true,
+      "name": "image",
+      "readOnly": false,
+      "repeatable": false,
+      "required": false,
+      "showLabel": true,
+      "type": "ddm-documentlibrary"
+    },
+    {
+      "label": {
+        "fi_FI": "Kuvan kuvaus"
+      },
+      "predefinedValue": {
+        "fi_FI": ""
+      },
+      "style": {
+        "fi_FI": ""
+      },
+      "tip": {
+        "fi_FI": ""
+      },
+      "dataType": "string",
+      "indexType": "text",
+      "localizable": true,
+      "name": "imageAlt",
+      "readOnly": false,
+      "repeatable": false,
+      "required": false,
+      "showLabel": true,
+      "type": "textarea"
+    },
+    {
+      "label": {
+        "fi_FI": "Toimenpiteen vaikutus prosentteina"
+      },
+      "predefinedValue": {
+        "fi_FI": "0"
+      },
+      "style": {
+        "fi_FI": ""
+      },
+      "tip": {
+        "fi_FI": "Tämä arvo on erityisesti 100fiksun teon toimenpiteille tarpeellinen. prosenttiarvo, joka kertoo, kuinka paljon kyseisen teon toteuttaminen vähentää hiilijalajälkeä"
+      },
+      "dataType": "string",
+      "indexType": "keyword",
+      "localizable": true,
+      "name": "decrease",
+      "readOnly": false,
+      "repeatable": false,
+      "required": false,
+      "showLabel": true,
+      "type": "text"
+    },
+    {
+      "label": {
+        "fi_FI": "Ympäristövaikutus"
+      },
+      "options": [
+        {
+          "value": "1",
+          "label": {
+            "fi_FI": "Pieni"
+          }
+        },
+        {
+          "value": "2",
+          "label": {
+            "fi_FI": "Keskisuuri"
+          }
+        },
+        {
+          "value": "3",
+          "label": {
+            "fi_FI": "Suuri"
+          }
+        }
+      ],
+      "predefinedValue": {
+        "fi_FI": [
+          ""
+        ]
+      },
+      "style": {
+        "fi_FI": ""
+      },
+      "tip": {
+        "fi_FI": ""
+      },
+      "dataType": "string",
+      "indexType": "keyword",
+      "localizable": true,
+      "multiple": false,
+      "name": "environmentEffect",
+      "readOnly": false,
+      "repeatable": false,
+      "required": false,
+      "showLabel": true,
+      "type": "select"
+    },
+    {
+      "label": {
+        "fi_FI": "Linkki"
+      },
+      "predefinedValue": {
+        "fi_FI": ""
+      },
+      "style": {
+        "fi_FI": ""
+      },
+      "tip": {
+        "fi_FI": ""
+      },
+      "dataType": "string",
+      "indexType": "keyword",
+      "localizable": true,
+      "name": "linkUrl",
+      "readOnly": false,
+      "repeatable": true,
+      "required": false,
+      "showLabel": true,
+      "type": "text",
+      "nestedFields": [
+        {
+          "label": {
+            "fi_FI": "Linkkiteksti"
+          },
+          "predefinedValue": {
+            "fi_FI": ""
+          },
+          "style": {
+            "fi_FI": ""
+          },
+          "tip": {
+            "fi_FI": ""
+          },
+          "dataType": "string",
+          "indexType": "keyword",
+          "localizable": true,
+          "name": "linkText",
+          "readOnly": false,
+          "repeatable": false,
+          "required": false,
+          "showLabel": true,
+          "type": "text"
+        },
+        {
+          "label": {
+            "fi_FI": "Linkin ikoni"
+          },
+          "predefinedValue": {
+            "fi_FI": ""
+          },
+          "style": {
+            "fi_FI": ""
+          },
+          "tip": {
+            "fi_FI": ""
+          },
+          "dataType": "string",
+          "indexType": "keyword",
+          "localizable": true,
+          "name": "linkIcon",
+          "readOnly": false,
+          "repeatable": false,
+          "required": false,
+          "showLabel": true,
+          "type": "text"
+        }
+      ]
+    }
+  ]
+}

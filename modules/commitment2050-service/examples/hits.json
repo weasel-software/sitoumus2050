@@ -1,0 +1,3702 @@
+{
+  "data": [
+    {
+      "UID": "com.liferay.journal.model.JournalArticle_PORTLET_57882",
+      "portletId": "com.liferay.journal.model.JournalArticle",
+      "fields": {
+        "ddmTemplateKey": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "33557"
+          ],
+          "name": "ddmTemplateKey",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "33557",
+          "nested": false
+        },
+        "entryClassPK": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "38305"
+          ],
+          "name": "entryClassPK",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "38305",
+          "nested": false
+        },
+        "ddm__keyword__31797__meterType_fi_FI": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "Sittest testisitoumus Mittari"
+          ],
+          "name": "ddm__keyword__31797__meterType_fi_FI",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "Sittest testisitoumus Mittari",
+          "nested": false
+        },
+        "publishDate": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "20180521102400"
+          ],
+          "name": "publishDate",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "20180521102400",
+          "nested": false
+        },
+        "ddm__text__31797__backgroundInformation_fi_FI_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "sittest testisitoumus taustatietoa"
+          ],
+          "name": "ddm__text__31797__backgroundInformation_fi_FI_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "sittest testisitoumus taustatietoa",
+          "nested": false
+        },
+        "ddm__keyword__31797__targetLevel_fi_FI": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "500 kpl"
+          ],
+          "name": "ddm__keyword__31797__targetLevel_fi_FI",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "500 kpl",
+          "nested": false
+        },
+        "classNameId": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "0"
+          ],
+          "name": "classNameId",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "0",
+          "nested": false
+        },
+        "expando__custom_fields__Organization name": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "test"
+          ],
+          "name": "expando__custom_fields__Organization name",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "test",
+          "nested": false
+        },
+        "ddm__keyword__31797__reportingInterval_fi_FI_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "3"
+          ],
+          "name": "ddm__keyword__31797__reportingInterval_fi_FI_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "3",
+          "nested": false
+        },
+        "ddm__text__31797__operationTitle_sv_SE_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "sittest testisitoumus toimenpide"
+          ],
+          "name": "ddm__text__31797__operationTitle_sv_SE_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "sittest testisitoumus toimenpide",
+          "nested": false
+        },
+        "ddm__text__31797__operationTitle_fi_FI": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "Sittest testisitoumus toimenpide"
+          ],
+          "name": "ddm__text__31797__operationTitle_fi_FI",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "Sittest testisitoumus toimenpide",
+          "nested": false
+        },
+        "ddm__keyword__31797__acceptCriterias_fi_FI_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "true"
+          ],
+          "name": "ddm__keyword__31797__acceptCriterias_fi_FI_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "true",
+          "nested": false
+        },
+        "modified_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "1527244605914"
+          ],
+          "name": "modified_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "1527244605914",
+          "nested": false
+        },
+        "ddm__text__31797__backgroundInformation_fi_FI": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "Sittest testisitoumus taustatietoa"
+          ],
+          "name": "ddm__text__31797__backgroundInformation_fi_FI",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "Sittest testisitoumus taustatietoa",
+          "nested": false
+        },
+        "ddm__text__31797__operationDescription_en_US_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "sittest testisitoumus toimenpide kuvaus"
+          ],
+          "name": "ddm__text__31797__operationDescription_en_US_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "sittest testisitoumus toimenpide kuvaus",
+          "nested": false
+        },
+        "ddm__text__31797__innovation_sv_SE_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "sittest testisitoumus mitä uutta"
+          ],
+          "name": "ddm__text__31797__innovation_sv_SE_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "sittest testisitoumus mitä uutta",
+          "nested": false
+        },
+        "ddm__keyword__31797__reportReminder_en_US_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "true"
+          ],
+          "name": "ddm__keyword__31797__reportReminder_en_US_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "true",
+          "nested": false
+        },
+        "ddm__text__31797__shortDescription_fi_FI": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "Sittest testisitoumus lyhyesti"
+          ],
+          "name": "ddm__text__31797__shortDescription_fi_FI",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "Sittest testisitoumus lyhyesti",
+          "nested": false
+        },
+        "ddm__text__31797__backgroundInformation_en_US": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "Sittest testisitoumus taustatietoa"
+          ],
+          "name": "ddm__text__31797__backgroundInformation_en_US",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "Sittest testisitoumus taustatietoa",
+          "nested": false
+        },
+        "ddm__text__31797__backgroundInformation_sv_SE": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "Sittest testisitoumus taustatietoa"
+          ],
+          "name": "ddm__text__31797__backgroundInformation_sv_SE",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "Sittest testisitoumus taustatietoa",
+          "nested": false
+        },
+        "version": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "1.2"
+          ],
+          "name": "version",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "1.2",
+          "nested": false
+        },
+        "ddm__text__31797__innovation_fi_FI": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "Sittest testisitoumus mitä uutta"
+          ],
+          "name": "ddm__text__31797__innovation_fi_FI",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "Sittest testisitoumus mitä uutta",
+          "nested": false
+        },
+        "ddm__text__31797__shortDescription_sv_SE_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "sittest testisitoumus lyhyesti"
+          ],
+          "name": "ddm__text__31797__shortDescription_sv_SE_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "sittest testisitoumus lyhyesti",
+          "nested": false
+        },
+        "ddm__keyword__31797__address_sv_SE_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "jyväskylä, suomi"
+          ],
+          "name": "ddm__keyword__31797__address_sv_SE_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "jyväskylä, suomi",
+          "nested": false
+        },
+        "ddm__text__31797__operationDescription_fi_FI": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "Sittest testisitoumus toimenpide kuvaus"
+          ],
+          "name": "ddm__text__31797__operationDescription_fi_FI",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "Sittest testisitoumus toimenpide kuvaus",
+          "nested": false
+        },
+        "status": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "0"
+          ],
+          "name": "status",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "0",
+          "nested": false
+        },
+        "ddm__keyword__31797__meterType_sv_SE": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "Sittest testisitoumus Mittari"
+          ],
+          "name": "ddm__keyword__31797__meterType_sv_SE",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "Sittest testisitoumus Mittari",
+          "nested": false
+        },
+        "publishDate_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "1526898240000"
+          ],
+          "name": "publishDate_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "1526898240000",
+          "nested": false
+        },
+        "content_fi_FI": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "Sittest testisitoumus mitä uutta Sittest testisitoumus taustatietoa 3 Sittest testisitoumus toimenpide kuvaus Jyväskylä, Suomi Sittest testisitoumus toimenpide 300 kpl Sittest testisitoumus lyhyesti Sittest testisitoumus Mittari true 500 kpl {\"latitude\":\"61.939083\",\"longitude\":\"25.7495467\"} true"
+          ],
+          "name": "content_fi_FI",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "Sittest testisitoumus mitä uutta Sittest testisitoumus taustatietoa 3 Sittest testisitoumus toimenpide kuvaus Jyväskylä, Suomi Sittest testisitoumus toimenpide 300 kpl Sittest testisitoumus lyhyesti Sittest testisitoumus Mittari true 500 kpl {\"latitude\":\"61.939083\",\"longitude\":\"25.7495467\"} true",
+          "nested": false
+        },
+        "localized_title_fi_FI_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "sittest testi sitoumus"
+          ],
+          "name": "localized_title_fi_FI_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "sittest testi sitoumus",
+          "nested": false
+        },
+        "ddm__keyword__31797__reportReminder_en_US": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "true"
+          ],
+          "name": "ddm__keyword__31797__reportReminder_en_US",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "true",
+          "nested": false
+        },
+        "ddm__text__31797__shortDescription_fi_FI_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "sittest testisitoumus lyhyesti"
+          ],
+          "name": "ddm__text__31797__shortDescription_fi_FI_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "sittest testisitoumus lyhyesti",
+          "nested": false
+        },
+        "ddm__text__31797__operationDescription_sv_SE_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "sittest testisitoumus toimenpide kuvaus"
+          ],
+          "name": "ddm__text__31797__operationDescription_sv_SE_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "sittest testisitoumus toimenpide kuvaus",
+          "nested": false
+        },
+        "ddm__text__31797__backgroundInformation_sv_SE_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "sittest testisitoumus taustatietoa"
+          ],
+          "name": "ddm__text__31797__backgroundInformation_sv_SE_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "sittest testisitoumus taustatietoa",
+          "nested": false
+        },
+        "ddm__keyword__31797__acceptCriterias_sv_SE_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "true"
+          ],
+          "name": "ddm__keyword__31797__acceptCriterias_sv_SE_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "true",
+          "nested": false
+        },
+        "uid": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "com.liferay.journal.model.JournalArticle_PORTLET_57882"
+          ],
+          "name": "uid",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "com.liferay.journal.model.JournalArticle_PORTLET_57882",
+          "nested": false
+        },
+        "ddm__keyword__31797__reportReminder_fi_FI_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "true"
+          ],
+          "name": "ddm__keyword__31797__reportReminder_fi_FI_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "true",
+          "nested": false
+        },
+        "ddm__text__31797__innovation_en_US": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "Sittest testisitoumus mitä uutta"
+          ],
+          "name": "ddm__text__31797__innovation_en_US",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "Sittest testisitoumus mitä uutta",
+          "nested": false
+        },
+        "localized_title_en_US_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "sittest testi sitoumus"
+          ],
+          "name": "localized_title_en_US_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "sittest testi sitoumus",
+          "nested": false
+        },
+        "ddm__keyword__31797__reportingInterval_sv_SE": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "3"
+          ],
+          "name": "ddm__keyword__31797__reportingInterval_sv_SE",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "3",
+          "nested": false
+        },
+        "ddm__text__31797__innovation_fi_FI_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "sittest testisitoumus mitä uutta"
+          ],
+          "name": "ddm__text__31797__innovation_fi_FI_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "sittest testisitoumus mitä uutta",
+          "nested": false
+        },
+        "ddm__keyword__31797__address_fi_FI_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "jyväskylä, suomi"
+          ],
+          "name": "ddm__keyword__31797__address_fi_FI_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "jyväskylä, suomi",
+          "nested": false
+        },
+        "ddm__keyword__31797__targetLevel_sv_SE": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "500 kpl"
+          ],
+          "name": "ddm__keyword__31797__targetLevel_sv_SE",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "500 kpl",
+          "nested": false
+        },
+        "layoutUuid": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            ""
+          ],
+          "name": "layoutUuid",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "",
+          "nested": false
+        },
+        "ddm__keyword__31797__startingLevel_sv_SE_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "300 kpl"
+          ],
+          "name": "ddm__keyword__31797__startingLevel_sv_SE_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "300 kpl",
+          "nested": false
+        },
+        "localized_title_sv_SE_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "sittest testi sitoumus"
+          ],
+          "name": "localized_title_sv_SE_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "sittest testi sitoumus",
+          "nested": false
+        },
+        "localized_title_fi_FI": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "sittest testi sitoumus"
+          ],
+          "name": "localized_title_fi_FI",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "sittest testi sitoumus",
+          "nested": false
+        },
+        "createDate": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "20180521102738"
+          ],
+          "name": "createDate",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "20180521102738",
+          "nested": false
+        },
+        "ddm__text__31797__innovation_en_US_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "sittest testisitoumus mitä uutta"
+          ],
+          "name": "ddm__text__31797__innovation_en_US_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "sittest testisitoumus mitä uutta",
+          "nested": false
+        },
+        "ddm__keyword__31797__meterType_en_US_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "sittest testisitoumus mittari"
+          ],
+          "name": "ddm__keyword__31797__meterType_en_US_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "sittest testisitoumus mittari",
+          "nested": false
+        },
+        "displayDate_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "1526898240000"
+          ],
+          "name": "displayDate_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "1526898240000",
+          "nested": false
+        },
+        "ddm__text__31797__shortDescription_en_US": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "Sittest testisitoumus lyhyesti"
+          ],
+          "name": "ddm__text__31797__shortDescription_en_US",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "Sittest testisitoumus lyhyesti",
+          "nested": false
+        },
+        "ddm__keyword__31797__address_en_US_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "jyväskylä, suomi"
+          ],
+          "name": "ddm__keyword__31797__address_en_US_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "jyväskylä, suomi",
+          "nested": false
+        },
+        "entryClassName": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "com.liferay.journal.model.JournalArticle"
+          ],
+          "name": "entryClassName",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "com.liferay.journal.model.JournalArticle",
+          "nested": false
+        },
+        "ddm__text__31797__operationDescription_en_US": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "Sittest testisitoumus toimenpide kuvaus"
+          ],
+          "name": "ddm__text__31797__operationDescription_en_US",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "Sittest testisitoumus toimenpide kuvaus",
+          "nested": false
+        },
+        "ddm__text__31797__operationTitle_sv_SE": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "Sittest testisitoumus toimenpide"
+          ],
+          "name": "ddm__text__31797__operationTitle_sv_SE",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "Sittest testisitoumus toimenpide",
+          "nested": false
+        },
+        "ddm__keyword__31797__acceptCriterias_en_US": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "true"
+          ],
+          "name": "ddm__keyword__31797__acceptCriterias_en_US",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "true",
+          "nested": false
+        },
+        "ddm__keyword__31797__meterType_fi_FI_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "sittest testisitoumus mittari"
+          ],
+          "name": "ddm__keyword__31797__meterType_fi_FI_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "sittest testisitoumus mittari",
+          "nested": false
+        },
+        "userId": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "20156"
+          ],
+          "name": "userId",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "20156",
+          "nested": false
+        },
+        "assetCategoryIds": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "31808",
+            "31815",
+            "31820",
+            "33497",
+            "33542",
+            "33549",
+            "33553"
+          ],
+          "name": "assetCategoryIds",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "31808",
+          "nested": false
+        },
+        "localized_title_en_US": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "sittest testi sitoumus"
+          ],
+          "name": "localized_title_en_US",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "sittest testi sitoumus",
+          "nested": false
+        },
+        "ddm__keyword__31797__targetLevel_en_US_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "500 kpl"
+          ],
+          "name": "ddm__keyword__31797__targetLevel_en_US_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "500 kpl",
+          "nested": false
+        },
+        "ddm__text__31797__shortDescription_en_US_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "sittest testisitoumus lyhyesti"
+          ],
+          "name": "ddm__text__31797__shortDescription_en_US_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "sittest testisitoumus lyhyesti",
+          "nested": false
+        },
+        "ddm__keyword__31797__targetLevel_fi_FI_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "500 kpl"
+          ],
+          "name": "ddm__keyword__31797__targetLevel_fi_FI_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "500 kpl",
+          "nested": false
+        },
+        "treePath": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "",
+            "31788"
+          ],
+          "name": "treePath",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "",
+          "nested": false
+        },
+        "ddm__keyword__31797__reportReminder_fi_FI": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "true"
+          ],
+          "name": "ddm__keyword__31797__reportReminder_fi_FI",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "true",
+          "nested": false
+        },
+        "ddm__keyword__31797__acceptCriterias_en_US_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "true"
+          ],
+          "name": "ddm__keyword__31797__acceptCriterias_en_US_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "true",
+          "nested": false
+        },
+        "localized_title_sv_SE": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "sittest testi sitoumus"
+          ],
+          "name": "localized_title_sv_SE",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "sittest testi sitoumus",
+          "nested": false
+        },
+        "groupId": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "20143"
+          ],
+          "name": "groupId",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "20143",
+          "nested": false
+        },
+        "ddm__text__31797__operationDescription_fi_FI_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "sittest testisitoumus toimenpide kuvaus"
+          ],
+          "name": "ddm__text__31797__operationDescription_fi_FI_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "sittest testisitoumus toimenpide kuvaus",
+          "nested": false
+        },
+        "createDate_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "1526898458889"
+          ],
+          "name": "createDate_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "1526898458889",
+          "nested": false
+        },
+        "ddm__keyword__31797__reportingInterval_fi_FI": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "3"
+          ],
+          "name": "ddm__keyword__31797__reportingInterval_fi_FI",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "3",
+          "nested": false
+        },
+        "ddm__keyword__31797__targetLevel_sv_SE_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "500 kpl"
+          ],
+          "name": "ddm__keyword__31797__targetLevel_sv_SE_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "500 kpl",
+          "nested": false
+        },
+        "classPK": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "0"
+          ],
+          "name": "classPK",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "0",
+          "nested": false
+        },
+        "scopeGroupId": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "20143"
+          ],
+          "name": "scopeGroupId",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "20143",
+          "nested": false
+        },
+        "articleId_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "38303"
+          ],
+          "name": "articleId_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "38303",
+          "nested": false
+        },
+        "modified": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "20180525103645"
+          ],
+          "name": "modified",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "20180525103645",
+          "nested": false
+        },
+        "title_fi_FI": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "Sittest testi sitoumus"
+          ],
+          "name": "title_fi_FI",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "Sittest testi sitoumus",
+          "nested": false
+        },
+        "ddm__keyword__31797__reportingInterval_en_US_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "3"
+          ],
+          "name": "ddm__keyword__31797__reportingInterval_en_US_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "3",
+          "nested": false
+        },
+        "assetCategoryTitles_fi_FI": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "työtä kestävästi",
+            "resurssiviisas talous",
+            "ei nälkää",
+            "yritys",
+            "muu tuotanto ja palvelut",
+            "pienyritys (10-50 henkeä)",
+            "toimenpidesitoumus"
+          ],
+          "name": "assetCategoryTitles_fi_FI",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "työtä kestävästi",
+          "nested": false
+        },
+        "ddm__keyword__31797__startingLevel_fi_FI": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "300 kpl"
+          ],
+          "name": "ddm__keyword__31797__startingLevel_fi_FI",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "300 kpl",
+          "nested": false
+        },
+        "visible": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "true"
+          ],
+          "name": "visible",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "true",
+          "nested": false
+        },
+        "ddmStructureKey": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "31796"
+          ],
+          "name": "ddmStructureKey",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "31796",
+          "nested": false
+        },
+        "ddm__keyword__31797__address_sv_SE": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "Jyväskylä, Suomi"
+          ],
+          "name": "ddm__keyword__31797__address_sv_SE",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "Jyväskylä, Suomi",
+          "nested": false
+        },
+        "assetCategoryTitles": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "työtä kestävästi",
+            "resurssiviisas talous",
+            "ei nälkää",
+            "yritys",
+            "muu tuotanto ja palvelut",
+            "pienyritys (10-50 henkeä)",
+            "toimenpidesitoumus"
+          ],
+          "name": "assetCategoryTitles",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "työtä kestävästi",
+          "nested": false
+        },
+        "defaultLanguageId": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "fi_FI"
+          ],
+          "name": "defaultLanguageId",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "fi_FI",
+          "nested": false
+        },
+        "ddm__keyword__31797__address_en_US": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "Jyväskylä, Suomi"
+          ],
+          "name": "ddm__keyword__31797__address_en_US",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "Jyväskylä, Suomi",
+          "nested": false
+        },
+        "viewCount_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "0"
+          ],
+          "name": "viewCount_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "0",
+          "nested": false
+        },
+        "ddm__keyword__31797__startingLevel_sv_SE": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "300 kpl"
+          ],
+          "name": "ddm__keyword__31797__startingLevel_sv_SE",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "300 kpl",
+          "nested": false
+        },
+        "folderId": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "31788"
+          ],
+          "name": "folderId",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "31788",
+          "nested": false
+        },
+        "classTypeId": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "31797"
+          ],
+          "name": "classTypeId",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "31797",
+          "nested": false
+        },
+        "companyId": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "20116"
+          ],
+          "name": "companyId",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "20116",
+          "nested": false
+        },
+        "rootEntryClassPK": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "38305"
+          ],
+          "name": "rootEntryClassPK",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "38305",
+          "nested": false
+        },
+        "ddm__keyword__31797__startingLevel_en_US": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "300 kpl"
+          ],
+          "name": "ddm__keyword__31797__startingLevel_en_US",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "300 kpl",
+          "nested": false
+        },
+        "assetCategoryTitles_en_US": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "zero hunger"
+          ],
+          "name": "assetCategoryTitles_en_US",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "zero hunger",
+          "nested": false
+        },
+        "displayDate": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "20180521102400"
+          ],
+          "name": "displayDate",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "20180521102400",
+          "nested": false
+        },
+        "ddm__keyword__31797__acceptCriterias_fi_FI": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "true"
+          ],
+          "name": "ddm__keyword__31797__acceptCriterias_fi_FI",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "true",
+          "nested": false
+        },
+        "ddm__text__31797__operationTitle_fi_FI_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "sittest testisitoumus toimenpide"
+          ],
+          "name": "ddm__text__31797__operationTitle_fi_FI_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "sittest testisitoumus toimenpide",
+          "nested": false
+        },
+        "ddm__keyword__31797__meterType_en_US": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "Sittest testisitoumus Mittari"
+          ],
+          "name": "ddm__keyword__31797__meterType_en_US",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "Sittest testisitoumus Mittari",
+          "nested": false
+        },
+        "ddm__keyword__31797__reportingInterval_sv_SE_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "3"
+          ],
+          "name": "ddm__keyword__31797__reportingInterval_sv_SE_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "3",
+          "nested": false
+        },
+        "ddm__keyword__31797__reportingInterval_en_US": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "3"
+          ],
+          "name": "ddm__keyword__31797__reportingInterval_en_US",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "3",
+          "nested": false
+        },
+        "description": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "Sittest testi sitoumus"
+          ],
+          "name": "description",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "Sittest testi sitoumus",
+          "nested": false
+        },
+        "ddm__keyword__31797__targetLevel_en_US": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "500 kpl"
+          ],
+          "name": "ddm__keyword__31797__targetLevel_en_US",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "500 kpl",
+          "nested": false
+        },
+        "ddm__keyword__31797__reportReminder_sv_SE": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "true"
+          ],
+          "name": "ddm__keyword__31797__reportReminder_sv_SE",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "true",
+          "nested": false
+        },
+        "content": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "Sittest testisitoumus mitä uutta Sittest testisitoumus taustatietoa 3 Sittest testisitoumus toimenpide kuvaus Jyväskylä, Suomi Sittest testisitoumus toimenpide 300 kpl Sittest testisitoumus lyhyesti Sittest testisitoumus Mittari true 500 kpl {\"latitude\":\"61.939083\",\"longitude\":\"25.7495467\"} true"
+          ],
+          "name": "content",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "Sittest testisitoumus mitä uutta Sittest testisitoumus taustatietoa 3 Sittest testisitoumus toimenpide kuvaus Jyväskylä, Suomi Sittest testisitoumus toimenpide 300 kpl Sittest testisitoumus lyhyesti Sittest testisitoumus Mittari true 500 kpl {\"latitude\":\"61.939083\",\"longitude\":\"25.7495467\"} true",
+          "nested": false
+        },
+        "head": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "true"
+          ],
+          "name": "head",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "true",
+          "nested": false
+        },
+        "ddm__text__31797__operationTitle_en_US": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "Sittest testisitoumus toimenpide"
+          ],
+          "name": "ddm__text__31797__operationTitle_en_US",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "Sittest testisitoumus toimenpide",
+          "nested": false
+        },
+        "groupRoleId": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "20143-20131"
+          ],
+          "name": "groupRoleId",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "20143-20131",
+          "nested": false
+        },
+        "ratings": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "0.0"
+          ],
+          "name": "ratings",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "0.0",
+          "nested": false
+        },
+        "expirationDate_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "9223372036854775807"
+          ],
+          "name": "expirationDate_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "9223372036854775807",
+          "nested": false
+        },
+        "viewCount": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "0"
+          ],
+          "name": "viewCount",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "0",
+          "nested": false
+        },
+        "ddm__text__31797__operationTitle_en_US_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "sittest testisitoumus toimenpide"
+          ],
+          "name": "ddm__text__31797__operationTitle_en_US_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "sittest testisitoumus toimenpide",
+          "nested": false
+        },
+        "ddm__keyword__31797__meterType_sv_SE_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "sittest testisitoumus mittari"
+          ],
+          "name": "ddm__keyword__31797__meterType_sv_SE_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "sittest testisitoumus mittari",
+          "nested": false
+        },
+        "expirationDate": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "99950812133000"
+          ],
+          "name": "expirationDate",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "99950812133000",
+          "nested": false
+        },
+        "ddm__text__31797__innovation_sv_SE": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "Sittest testisitoumus mitä uutta"
+          ],
+          "name": "ddm__text__31797__innovation_sv_SE",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "Sittest testisitoumus mitä uutta",
+          "nested": false
+        },
+        "ddm__keyword__31797__reportReminder_sv_SE_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "true"
+          ],
+          "name": "ddm__keyword__31797__reportReminder_sv_SE_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "true",
+          "nested": false
+        },
+        "ddm__keyword__31797__startingLevel_en_US_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "300 kpl"
+          ],
+          "name": "ddm__keyword__31797__startingLevel_en_US_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "300 kpl",
+          "nested": false
+        },
+        "roleId": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "20123",
+            "20124"
+          ],
+          "name": "roleId",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "20123",
+          "nested": false
+        },
+        "description_fi_FI": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "Sittest testi sitoumus"
+          ],
+          "name": "description_fi_FI",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "Sittest testi sitoumus",
+          "nested": false
+        },
+        "articleId": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "38303"
+          ],
+          "name": "articleId",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "38303",
+          "nested": false
+        },
+        "ddm__keyword__31797__address_fi_FI": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "Jyväskylä, Suomi"
+          ],
+          "name": "ddm__keyword__31797__address_fi_FI",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "Jyväskylä, Suomi",
+          "nested": false
+        },
+        "userName": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "tuki soikea"
+          ],
+          "name": "userName",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "tuki soikea",
+          "nested": false
+        },
+        "ddm__keyword__31797__acceptCriterias_sv_SE": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "true"
+          ],
+          "name": "ddm__keyword__31797__acceptCriterias_sv_SE",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "true",
+          "nested": false
+        },
+        "ddm__text__31797__operationDescription_sv_SE": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "Sittest testisitoumus toimenpide kuvaus"
+          ],
+          "name": "ddm__text__31797__operationDescription_sv_SE",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "Sittest testisitoumus toimenpide kuvaus",
+          "nested": false
+        },
+        "localized_title": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "sittest testi sitoumus"
+          ],
+          "name": "localized_title",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "sittest testi sitoumus",
+          "nested": false
+        },
+        "stagingGroup": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "false"
+          ],
+          "name": "stagingGroup",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "false",
+          "nested": false
+        },
+        "headListable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "true"
+          ],
+          "name": "headListable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "true",
+          "nested": false
+        },
+        "ddm__text__31797__shortDescription_sv_SE": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "Sittest testisitoumus lyhyesti"
+          ],
+          "name": "ddm__text__31797__shortDescription_sv_SE",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "Sittest testisitoumus lyhyesti",
+          "nested": false
+        },
+        "ddm__keyword__31797__startingLevel_fi_FI_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "300 kpl"
+          ],
+          "name": "ddm__keyword__31797__startingLevel_fi_FI_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "300 kpl",
+          "nested": false
+        },
+        "ddm__text__31797__backgroundInformation_en_US_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "sittest testisitoumus taustatietoa"
+          ],
+          "name": "ddm__text__31797__backgroundInformation_en_US_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "sittest testisitoumus taustatietoa",
+          "nested": false
+        }
+      }
+    },
+    {
+      "UID": "com.liferay.journal.model.JournalArticle_PORTLET_57873",
+      "portletId": "com.liferay.journal.model.JournalArticle",
+      "fields": {
+        "ddmTemplateKey": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "57866"
+          ],
+          "name": "ddmTemplateKey",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "57866",
+          "nested": false
+        },
+        "entryClassPK": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "57874"
+          ],
+          "name": "entryClassPK",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "57874",
+          "nested": false
+        },
+        "ddm__keyword__57855__reportTitle_fi_FI": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "Testiraportti"
+          ],
+          "name": "ddm__keyword__57855__reportTitle_fi_FI",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "Testiraportti",
+          "nested": false
+        },
+        "publishDate": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "20180525102800"
+          ],
+          "name": "publishDate",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "20180525102800",
+          "nested": false
+        },
+        "ddm__keyword__57855__meterType_sv_SE_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "sittest testisitoumus mittari"
+          ],
+          "name": "ddm__keyword__57855__meterType_sv_SE_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "sittest testisitoumus mittari",
+          "nested": false
+        },
+        "classNameId": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "0"
+          ],
+          "name": "classNameId",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "0",
+          "nested": false
+        },
+        "ddm__keyword__57855__reportStartDate_fi_FI": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "2018-05-18"
+          ],
+          "name": "ddm__keyword__57855__reportStartDate_fi_FI",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "2018-05-18",
+          "nested": false
+        },
+        "ddm__keyword__57855__operationTitle_en_US": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "Sittest testisitoumus toimenpide"
+          ],
+          "name": "ddm__keyword__57855__operationTitle_en_US",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "Sittest testisitoumus toimenpide",
+          "nested": false
+        },
+        "ddm__keyword__57855__reportEndDate_sv_SE": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "2018-05-25"
+          ],
+          "name": "ddm__keyword__57855__reportEndDate_sv_SE",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "2018-05-25",
+          "nested": false
+        },
+        "ddm__keyword__57855__reportEndDate_en_US": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "2018-05-25"
+          ],
+          "name": "ddm__keyword__57855__reportEndDate_en_US",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "2018-05-25",
+          "nested": false
+        },
+        "modified_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "1527244488028"
+          ],
+          "name": "modified_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "1527244488028",
+          "nested": false
+        },
+        "ddm__keyword__57855__operationTitle_sv_SE": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "Sittest testisitoumus toimenpide"
+          ],
+          "name": "ddm__keyword__57855__operationTitle_sv_SE",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "Sittest testisitoumus toimenpide",
+          "nested": false
+        },
+        "ddm__text__57855__reportText_en_US_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "etenee suunnitelmien mukaan"
+          ],
+          "name": "ddm__text__57855__reportText_en_US_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "etenee suunnitelmien mukaan",
+          "nested": false
+        },
+        "version": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "1.0"
+          ],
+          "name": "version",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "1.0",
+          "nested": false
+        },
+        "ddm__keyword__57855__reportTitle_sv_SE": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "Testiraportti"
+          ],
+          "name": "ddm__keyword__57855__reportTitle_sv_SE",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "Testiraportti",
+          "nested": false
+        },
+        "ddm__keyword__57855__reportTitle_en_US": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "Testiraportti"
+          ],
+          "name": "ddm__keyword__57855__reportTitle_en_US",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "Testiraportti",
+          "nested": false
+        },
+        "status": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "0"
+          ],
+          "name": "status",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "0",
+          "nested": false
+        },
+        "ddm__text__57855__reportText_fi_FI": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "Etenee suunnitelmien mukaan"
+          ],
+          "name": "ddm__text__57855__reportText_fi_FI",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "Etenee suunnitelmien mukaan",
+          "nested": false
+        },
+        "publishDate_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "1527244080000"
+          ],
+          "name": "publishDate_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "1527244080000",
+          "nested": false
+        },
+        "content_fi_FI": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "350 2018-05-18 Ajassa Sittest testisitoumus toimenpide Sittest testisitoumus Mittari Testiraportti 2018-05-25 Etenee suunnitelmien mukaan"
+          ],
+          "name": "content_fi_FI",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "350 2018-05-18 Ajassa Sittest testisitoumus toimenpide Sittest testisitoumus Mittari Testiraportti 2018-05-25 Etenee suunnitelmien mukaan",
+          "nested": false
+        },
+        "localized_title_fi_FI_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "sittest testi sitoumus - reports"
+          ],
+          "name": "localized_title_fi_FI_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "sittest testi sitoumus - reports",
+          "nested": false
+        },
+        "ddm__keyword__57855__reportEndDate_fi_FI_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "2018-05-25"
+          ],
+          "name": "ddm__keyword__57855__reportEndDate_fi_FI_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "2018-05-25",
+          "nested": false
+        },
+        "ddm__keyword__57855__progressType_sv_SE": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "Ajassa"
+          ],
+          "name": "ddm__keyword__57855__progressType_sv_SE",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "Ajassa",
+          "nested": false
+        },
+        "ddm__keyword__57855__progressType_fi_FI_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "ajassa"
+          ],
+          "name": "ddm__keyword__57855__progressType_fi_FI_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "ajassa",
+          "nested": false
+        },
+        "ddm__keyword__57855__reportTitle_en_US_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "testiraportti"
+          ],
+          "name": "ddm__keyword__57855__reportTitle_en_US_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "testiraportti",
+          "nested": false
+        },
+        "uid": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "com.liferay.journal.model.JournalArticle_PORTLET_57873"
+          ],
+          "name": "uid",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "com.liferay.journal.model.JournalArticle_PORTLET_57873",
+          "nested": false
+        },
+        "ddm__keyword__57855__currentLevel_sv_SE_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "350"
+          ],
+          "name": "ddm__keyword__57855__currentLevel_sv_SE_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "350",
+          "nested": false
+        },
+        "localized_title_en_US_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "sittest testi sitoumus - reports"
+          ],
+          "name": "localized_title_en_US_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "sittest testi sitoumus - reports",
+          "nested": false
+        },
+        "ddm__text__57855__reportText_fi_FI_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "etenee suunnitelmien mukaan"
+          ],
+          "name": "ddm__text__57855__reportText_fi_FI_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "etenee suunnitelmien mukaan",
+          "nested": false
+        },
+        "layoutUuid": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            ""
+          ],
+          "name": "layoutUuid",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "",
+          "nested": false
+        },
+        "ddm__keyword__57855__reportTitle_fi_FI_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "testiraportti"
+          ],
+          "name": "ddm__keyword__57855__reportTitle_fi_FI_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "testiraportti",
+          "nested": false
+        },
+        "localized_title_sv_SE_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "sittest testi sitoumus - reports"
+          ],
+          "name": "localized_title_sv_SE_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "sittest testi sitoumus - reports",
+          "nested": false
+        },
+        "localized_title_fi_FI": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "sittest testi sitoumus - reports"
+          ],
+          "name": "localized_title_fi_FI",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "sittest testi sitoumus - reports",
+          "nested": false
+        },
+        "createDate": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "20180525103447"
+          ],
+          "name": "createDate",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "20180525103447",
+          "nested": false
+        },
+        "displayDate_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "1527244080000"
+          ],
+          "name": "displayDate_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "1527244080000",
+          "nested": false
+        },
+        "entryClassName": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "com.liferay.journal.model.JournalArticle"
+          ],
+          "name": "entryClassName",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "com.liferay.journal.model.JournalArticle",
+          "nested": false
+        },
+        "ddm__keyword__57855__operationTitle_en_US_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "sittest testisitoumus toimenpide"
+          ],
+          "name": "ddm__keyword__57855__operationTitle_en_US_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "sittest testisitoumus toimenpide",
+          "nested": false
+        },
+        "ddm__keyword__57855__meterType_sv_SE": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "Sittest testisitoumus Mittari"
+          ],
+          "name": "ddm__keyword__57855__meterType_sv_SE",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "Sittest testisitoumus Mittari",
+          "nested": false
+        },
+        "userId": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "20156"
+          ],
+          "name": "userId",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "20156",
+          "nested": false
+        },
+        "ddm__keyword__57855__reportEndDate_en_US_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "2018-05-25"
+          ],
+          "name": "ddm__keyword__57855__reportEndDate_en_US_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "2018-05-25",
+          "nested": false
+        },
+        "ddm__keyword__57855__operationTitle_fi_FI_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "sittest testisitoumus toimenpide"
+          ],
+          "name": "ddm__keyword__57855__operationTitle_fi_FI_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "sittest testisitoumus toimenpide",
+          "nested": false
+        },
+        "localized_title_en_US": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "sittest testi sitoumus - reports"
+          ],
+          "name": "localized_title_en_US",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "sittest testi sitoumus - reports",
+          "nested": false
+        },
+        "ddm__keyword__57855__reportStartDate_en_US": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "2018-05-18"
+          ],
+          "name": "ddm__keyword__57855__reportStartDate_en_US",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "2018-05-18",
+          "nested": false
+        },
+        "treePath": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "",
+            "57870"
+          ],
+          "name": "treePath",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "",
+          "nested": false
+        },
+        "ddm__keyword__57855__progressType_fi_FI": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "Ajassa"
+          ],
+          "name": "ddm__keyword__57855__progressType_fi_FI",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "Ajassa",
+          "nested": false
+        },
+        "ddm__text__57855__reportText_en_US": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "Etenee suunnitelmien mukaan"
+          ],
+          "name": "ddm__text__57855__reportText_en_US",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "Etenee suunnitelmien mukaan",
+          "nested": false
+        },
+        "localized_title_sv_SE": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "sittest testi sitoumus - reports"
+          ],
+          "name": "localized_title_sv_SE",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "sittest testi sitoumus - reports",
+          "nested": false
+        },
+        "groupId": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "20143"
+          ],
+          "name": "groupId",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "20143",
+          "nested": false
+        },
+        "ddm__keyword__57855__reportTitle_sv_SE_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "testiraportti"
+          ],
+          "name": "ddm__keyword__57855__reportTitle_sv_SE_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "testiraportti",
+          "nested": false
+        },
+        "createDate_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "1527244487762"
+          ],
+          "name": "createDate_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "1527244487762",
+          "nested": false
+        },
+        "classPK": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "0"
+          ],
+          "name": "classPK",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "0",
+          "nested": false
+        },
+        "scopeGroupId": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "20143"
+          ],
+          "name": "scopeGroupId",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "20143",
+          "nested": false
+        },
+        "ddm__text__57855__reportText_sv_SE": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "Etenee suunnitelmien mukaan"
+          ],
+          "name": "ddm__text__57855__reportText_sv_SE",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "Etenee suunnitelmien mukaan",
+          "nested": false
+        },
+        "articleId_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "57872"
+          ],
+          "name": "articleId_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "57872",
+          "nested": false
+        },
+        "ddm__keyword__57855__currentLevel_fi_FI": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "350"
+          ],
+          "name": "ddm__keyword__57855__currentLevel_fi_FI",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "350",
+          "nested": false
+        },
+        "modified": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "20180525103448"
+          ],
+          "name": "modified",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "20180525103448",
+          "nested": false
+        },
+        "title_fi_FI": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "Sittest testi sitoumus - reports"
+          ],
+          "name": "title_fi_FI",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "Sittest testi sitoumus - reports",
+          "nested": false
+        },
+        "ddm__keyword__57855__operationTitle_sv_SE_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "sittest testisitoumus toimenpide"
+          ],
+          "name": "ddm__keyword__57855__operationTitle_sv_SE_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "sittest testisitoumus toimenpide",
+          "nested": false
+        },
+        "visible": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "true"
+          ],
+          "name": "visible",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "true",
+          "nested": false
+        },
+        "ddmStructureKey": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "57854"
+          ],
+          "name": "ddmStructureKey",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "57854",
+          "nested": false
+        },
+        "defaultLanguageId": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "fi_FI"
+          ],
+          "name": "defaultLanguageId",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "fi_FI",
+          "nested": false
+        },
+        "viewCount_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "0"
+          ],
+          "name": "viewCount_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "0",
+          "nested": false
+        },
+        "ddm__keyword__57855__currentLevel_en_US": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "350"
+          ],
+          "name": "ddm__keyword__57855__currentLevel_en_US",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "350",
+          "nested": false
+        },
+        "folderId": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "57870"
+          ],
+          "name": "folderId",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "57870",
+          "nested": false
+        },
+        "classTypeId": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "57855"
+          ],
+          "name": "classTypeId",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "57855",
+          "nested": false
+        },
+        "ddm__keyword__57855__currentLevel_sv_SE": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "350"
+          ],
+          "name": "ddm__keyword__57855__currentLevel_sv_SE",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "350",
+          "nested": false
+        },
+        "companyId": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "20116"
+          ],
+          "name": "companyId",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "20116",
+          "nested": false
+        },
+        "rootEntryClassPK": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "57874"
+          ],
+          "name": "rootEntryClassPK",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "57874",
+          "nested": false
+        },
+        "ddm__keyword__57855__reportEndDate_sv_SE_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "2018-05-25"
+          ],
+          "name": "ddm__keyword__57855__reportEndDate_sv_SE_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "2018-05-25",
+          "nested": false
+        },
+        "displayDate": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "20180525102800"
+          ],
+          "name": "displayDate",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "20180525102800",
+          "nested": false
+        },
+        "ddm__keyword__57855__progressType_en_US_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "ajassa"
+          ],
+          "name": "ddm__keyword__57855__progressType_en_US_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "ajassa",
+          "nested": false
+        },
+        "ddm__keyword__57855__reportStartDate_sv_SE_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "2018-05-18"
+          ],
+          "name": "ddm__keyword__57855__reportStartDate_sv_SE_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "2018-05-18",
+          "nested": false
+        },
+        "ddm__keyword__57855__reportStartDate_fi_FI_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "2018-05-18"
+          ],
+          "name": "ddm__keyword__57855__reportStartDate_fi_FI_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "2018-05-18",
+          "nested": false
+        },
+        "ddm__keyword__57855__progressType_en_US": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "Ajassa"
+          ],
+          "name": "ddm__keyword__57855__progressType_en_US",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "Ajassa",
+          "nested": false
+        },
+        "content": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "350 2018-05-18 Ajassa Sittest testisitoumus toimenpide Sittest testisitoumus Mittari Testiraportti 2018-05-25 Etenee suunnitelmien mukaan"
+          ],
+          "name": "content",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "350 2018-05-18 Ajassa Sittest testisitoumus toimenpide Sittest testisitoumus Mittari Testiraportti 2018-05-25 Etenee suunnitelmien mukaan",
+          "nested": false
+        },
+        "ddm__keyword__57855__reportEndDate_fi_FI": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "2018-05-25"
+          ],
+          "name": "ddm__keyword__57855__reportEndDate_fi_FI",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "2018-05-25",
+          "nested": false
+        },
+        "head": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "true"
+          ],
+          "name": "head",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "true",
+          "nested": false
+        },
+        "ddm__keyword__57855__operationTitle_fi_FI": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "Sittest testisitoumus toimenpide"
+          ],
+          "name": "ddm__keyword__57855__operationTitle_fi_FI",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "Sittest testisitoumus toimenpide",
+          "nested": false
+        },
+        "groupRoleId": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "20143-20131"
+          ],
+          "name": "groupRoleId",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "20143-20131",
+          "nested": false
+        },
+        "ratings": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "0.0"
+          ],
+          "name": "ratings",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "0.0",
+          "nested": false
+        },
+        "expirationDate_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "9223372036854775807"
+          ],
+          "name": "expirationDate_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "9223372036854775807",
+          "nested": false
+        },
+        "viewCount": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "0"
+          ],
+          "name": "viewCount",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "0",
+          "nested": false
+        },
+        "expirationDate": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "99950812133000"
+          ],
+          "name": "expirationDate",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "99950812133000",
+          "nested": false
+        },
+        "ddm__text__57855__reportText_sv_SE_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "etenee suunnitelmien mukaan"
+          ],
+          "name": "ddm__text__57855__reportText_sv_SE_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "etenee suunnitelmien mukaan",
+          "nested": false
+        },
+        "roleId": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "20123",
+            "20124"
+          ],
+          "name": "roleId",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "20123",
+          "nested": false
+        },
+        "ddm__keyword__57855__currentLevel_fi_FI_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "350"
+          ],
+          "name": "ddm__keyword__57855__currentLevel_fi_FI_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "350",
+          "nested": false
+        },
+        "ddm__keyword__57855__meterType_fi_FI_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "sittest testisitoumus mittari"
+          ],
+          "name": "ddm__keyword__57855__meterType_fi_FI_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "sittest testisitoumus mittari",
+          "nested": false
+        },
+        "articleId": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "57872"
+          ],
+          "name": "articleId",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "57872",
+          "nested": false
+        },
+        "ddm__keyword__57855__meterType_fi_FI": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "Sittest testisitoumus Mittari"
+          ],
+          "name": "ddm__keyword__57855__meterType_fi_FI",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "Sittest testisitoumus Mittari",
+          "nested": false
+        },
+        "ddm__keyword__57855__currentLevel_en_US_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "350"
+          ],
+          "name": "ddm__keyword__57855__currentLevel_en_US_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "350",
+          "nested": false
+        },
+        "ddm__keyword__57855__meterType_en_US": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "Sittest testisitoumus Mittari"
+          ],
+          "name": "ddm__keyword__57855__meterType_en_US",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "Sittest testisitoumus Mittari",
+          "nested": false
+        },
+        "userName": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "tuki soikea"
+          ],
+          "name": "userName",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "tuki soikea",
+          "nested": false
+        },
+        "localized_title": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "sittest testi sitoumus - reports"
+          ],
+          "name": "localized_title",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "sittest testi sitoumus - reports",
+          "nested": false
+        },
+        "stagingGroup": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "false"
+          ],
+          "name": "stagingGroup",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "false",
+          "nested": false
+        },
+        "headListable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "true"
+          ],
+          "name": "headListable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "true",
+          "nested": false
+        },
+        "ddm__keyword__57855__meterType_en_US_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "sittest testisitoumus mittari"
+          ],
+          "name": "ddm__keyword__57855__meterType_en_US_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "sittest testisitoumus mittari",
+          "nested": false
+        },
+        "ddm__keyword__57855__progressType_sv_SE_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "ajassa"
+          ],
+          "name": "ddm__keyword__57855__progressType_sv_SE_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "ajassa",
+          "nested": false
+        },
+        "ddm__keyword__57855__reportStartDate_sv_SE": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "2018-05-18"
+          ],
+          "name": "ddm__keyword__57855__reportStartDate_sv_SE",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "2018-05-18",
+          "nested": false
+        },
+        "ddm__keyword__57855__reportStartDate_en_US_String_sortable": {
+          "date": false,
+          "tokenized": false,
+          "array": false,
+          "values": [
+            "2018-05-18"
+          ],
+          "name": "ddm__keyword__57855__reportStartDate_en_US_String_sortable",
+          "localized": false,
+          "numeric": false,
+          "boost": 1,
+          "sortable": false,
+          "fields": [],
+          "value": "2018-05-18",
+          "nested": false
+        }
+      }
+    }
+  ]
+}

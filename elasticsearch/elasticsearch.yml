@@ -1,0 +1,3 @@
+network.host: _local_
+network.bind_host: 0.0.0.0
+cluster.name: LiferayElasticsearchCluster

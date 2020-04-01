@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<root available-locales="fi_FI" default-locale="fi_FI">
+    <dynamic-element name="startDate" type="ddm-date" index-type="" instance-id="bjcj">
+        <dynamic-content language-id="fi_FI"><![CDATA[2018-04-20]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="endDate" type="ddm-date" index-type="" instance-id="pwoa">
+        <dynamic-content language-id="fi_FI"><![CDATA[2018-04-20]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="shortDescription" type="text_box" index-type="text" instance-id="mfjm">
+        <dynamic-content language-id="fi_FI"><![CDATA[Sitoumus lyhyesti]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="backgroundInformation" type="text_box" index-type="text" instance-id="jocq">
+        <dynamic-content language-id="fi_FI"><![CDATA[Testausta varten]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="innovation" type="text_box" index-type="text" instance-id="lfsi">
+        <dynamic-content language-id="fi_FI"><![CDATA[]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="operationTitle" type="text_box" index-type="text" instance-id="umhs">
+        <dynamic-element name="operationDescription" instance-id="mxum" type="text_box" index-type="text">
+            <dynamic-content language-id="fi_FI"><![CDATA[Toiminnan kuvaus]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="meterType" instance-id="sxgm" type="text" index-type="keyword">
+            <dynamic-element name="startingLevel" instance-id="mnib" type="text" index-type="keyword">
+                <dynamic-content language-id="fi_FI"><![CDATA[0]]></dynamic-content>
+            </dynamic-element>
+            <dynamic-element name="targetLevel" instance-id="irru" type="text" index-type="keyword">
+                <dynamic-content language-id="fi_FI"><![CDATA[100]]></dynamic-content>
+            </dynamic-element>
+            <dynamic-content language-id="fi_FI"><![CDATA[kpl]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-content language-id="fi_FI"><![CDATA[Toiminta otsikko]]></dynamic-content>
+    </dynamic-element>
+    <dynamic-element name="address" type="text" index-type="keyword" instance-id="ylxt">
+        <dynamic-element name="latitude" instance-id="krcw" type="text" index-type="keyword">
+            <dynamic-content language-id="fi_FI"><![CDATA[12]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-element name="longitude" instance-id="luyv" type="text" index-type="keyword">
+            <dynamic-content language-id="fi_FI"><![CDATA[31]]></dynamic-content>
+        </dynamic-element>
+        <dynamic-content language-id="fi_FI"><![CDATA[Kuopio, Suomi]]></dynamic-content>
+    </dynamic-element>
+</root>

@@ -1,0 +1,25 @@
+.v-align {
+  display: flex;
+  align-items: center;
+}
+
+.full-height {
+  height:100%;
+}
+
+.full-height-childs {
+  height:100%;
+  div {
+    height: 100%;
+  }
+}
+
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}

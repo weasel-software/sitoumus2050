@@ -1,0 +1,69 @@
+@import 'variables';
+@import 'mixins';
+@import 'common';
+@import 'button';
+
+:host {
+  box-sizing: border-box;
+  display: block;
+  text-align: center;
+}
+
+.category-container {
+  min-height: 373px;
+}
+
+.category-end {
+  margin: 0 auto;
+  margin-top: -120px;
+  max-width: 700px;
+  padding: 0;
+  width: 90%;
+  @include breakpoint(mobile) {
+    margin-top: -45px;
+  }
+}
+
+.category__icon {
+  align-items: center;
+  border-radius: 50%;
+  display: flex;
+  height: 90px;
+  justify-content: center;
+  margin: 2em auto;
+  min-height: 90px;
+  min-width: 90px;
+  width: 90px;
+
+  img {
+    height: 60px;
+    width: 60px;
+  }
+}
+
+.category__end-info {
+  font-weight: 300;
+  margin-bottom: 2em;
+}
+
+.category__button {
+  button {
+    @extend %button-green;
+  }
+}
+
+.green {
+  background-color: #e0f4d0;
+}
+
+.blue {
+  background-color: #d7f2fa;
+}
+
+.yellow {
+  background-color: #ffef7f;
+}
+
+.orange {
+  background-color: #ffead3;
+}

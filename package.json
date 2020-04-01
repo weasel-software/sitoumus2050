@@ -1,0 +1,38 @@
+{
+  "name": "sitoumus2050",
+  "version": "1.0.0",
+  "description": "## Set up local dev env: - Install (and update!) Liferay blade: https://dev.liferay.com/fi/develop/tutorials/-/knowledge_base/7-0/installing-blade-cli - Create db, see mysql/sitoumus.sql     - dump data from production and copy it to your local db        - cd mysql        - ./copy-db-from-prod-to-local.sh - TODO: data folder setup, use perhaps s3?    - ./sync-document-library-from-prod-to-local.sh - Create server (server will be created under /bundles, by default local env settings will be used): blade gw initBundle - Start server: blade server start -b - server log: tail -f ./bundles/tomcat-8.0.32/logs/catalina.out - Stop server: blade server stop",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "blade deploy",
+    "initBundle": "blade gw initBundle",
+    "start": "blade server start",
+    "stop": "blade server stop",
+    "install-ui": "cd react-ui && npm install",
+    "start-ui": "cd react-ui && npm start",
+    "build-and-copy-react-ui-to-theme": "cd react-ui && npm install && npm run build",
+    "deploy-theme": "cd themes/sitoumus-2050-theme && npm run deploy && cp ./dist/*.war ../../build",
+    "deploy-layouts": "cd themes/sitoumus-layouts && npm run deploy && cp ./dist/*.war ../../build",
+    "deploy-portlets": "cd modules/commitment-react-portlets && blade deploy && cp ./build/libs/*.jar ../../build",
+    "deploy-service": "cd modules/commitment2050-service && blade deploy && cp ./build/libs/*.jar ../../build",
+    "deploy-langs": "cd modules/hook-language && blade deploy && cp ./build/libs/*.jar ../../build",
+    "deploy-all": "npm run build-and-copy-react-ui-to-theme && npm run deploy-theme && npm run deploy-layouts && npm run deploy-portlets && npm run deploy-service && npm run deploy-langs",
+    "build-all": "npm run build-and-copy-react-ui-to-theme && ./gradlew build && rsync ./themes/sitoumus-2050-theme/dist/*.war ./themes/sitoumus-layouts/dist/*.war ./modules/commitment-react-portlets/build/libs/*.jar ./modules/commitment2050-service/build/libs/*.jar ./modules/hook-language/build/libs/*.jar ./docker/deploy/",
+    "init-and-deploy": "blade gw initBundle && npm run deploy-all",
+    "sync-db-data": "cd mysql && ./copy-db-from-prod-to-local.sh && ./sync-document-library-from-prod-to-local.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soikea/sitoumus2050.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soikea/sitoumus2050/issues"
+  },
+  "homepage": "https://github.com/soikea/sitoumus2050#readme",
+  "dependencies": {
+    "commander": "^2.17.1",
+    "natives": "^1.1.6"
+  }
+}

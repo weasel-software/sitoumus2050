@@ -1,0 +1,38 @@
+<div class="tip">
+    <div class="tip__container-top" (click)="expandTip(tip)">
+        <img class="tip__environment-effect" [src]="'/o/sitoumus-2050-theme/eltest/assets/images/vaikutus-' + tip.environmentEffect + '-kortti.svg'"
+            alt="">
+        <div class="tip__name-container">
+            <span class="tip__name">{{ tip.title[translate.currentLang] }}</span>
+            <span class="tip__decrease" [ngClass]="{'tip__decrease--green' : todo}">-{{ tip.decrease / 10 }}%</span>
+        </div>
+    </div>
+    <div class="tip__container-bottom">
+        <div class="tip__checkbox-container">
+            <label class="tip__checkbox">
+                <input type="checkbox" [checked]="todo" (change)="toggleTodo($event)" [id]="'b' + tip.testId">
+                <span>{{ 'TIP-ROW.PICK' | translate }}</span>
+                <span class="checkmark checkmark--green"></span>
+            </label>
+            <label class="tip__checkbox">
+                <input type="checkbox" [checked]="done" (change)="toggleDone($event)" [id]="'a' + tip.testId">
+                <span>{{ 'TIP-ROW.DONE' | translate }}</span>
+                <span class="checkmark"></span>
+            </label>
+            <br>
+        </div>
+        <button class="tip__details-button" (click)="expandTip(tip)">
+            <span class="tip__details-button-icon" [ngClass]="{ 'tip__details-button-icon-rotated' : expanded }">
+                <img src="/o/sitoumus-2050-theme/eltest/assets/images/arrow.svg" alt="">
+            </span>
+        </button>
+    </div>
+</div>
+<div class="tip__expand" *ngIf="expanded" [@expand]="">
+    <img [src]="tip.image[translate.currentLang]" alt="">
+    <p class="tip__expand__description" [innerHTML]="tip.description[translate.currentLang]"></p>
+    <div class="tip__expand__description tip__expand__description--last">
+        <img [src]="'/o/sitoumus-2050-theme/eltest/assets/images/vaikutus-' + tip.environmentEffect + '-kortti.svg'" alt="">
+        <p class="">{{ tip.punchLine[translate.currentLang] }}</p>
+    </div>
+</div>

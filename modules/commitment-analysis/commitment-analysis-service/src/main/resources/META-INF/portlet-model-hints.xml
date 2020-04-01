@@ -1,0 +1,196 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="fi.weasel.commitment2050.commitmentanalysis.model.Commitment">
+		<field name="commitmentId" type="String" />
+		<field name="groupId" type="long" />
+		<field name="companyId" type="long" />
+		<field name="organizationId" type="String" />
+		<field name="userId" type="long" />
+		<field name="userName" type="String" />
+		<field name="createDate" type="Date" />
+		<field name="modifiedDate" type="Date" />
+		<field name="titleFI" type="String">
+			<hint-collection name="TEXTAREA" />
+		</field>
+		<field name="titleEN" type="String">
+			<hint-collection name="TEXTAREA" />
+		</field>
+		<field name="titleSV" type="String">
+			<hint-collection name="TEXTAREA" />
+		</field>
+		<field name="startDate" type="Date" />
+		<field name="endDate" type="Date" />
+		<field name="updated" type="Date" />
+		<field name="created" type="Date" />
+		<field name="innovationFI" type="String">
+			<hint-collection name="TEXTAREA" />
+		</field>
+		<field name="innovationEN" type="String">
+			<hint-collection name="TEXTAREA" />
+		</field>
+		<field name="innovationSV" type="String">
+			<hint-collection name="TEXTAREA" />
+		</field>
+		<field name="backgroundInformationFI" type="String">
+			<hint-collection name="TEXTAREA" />
+		</field>
+		<field name="backgroundInformationEN" type="String">
+			<hint-collection name="TEXTAREA" />
+		</field>
+		<field name="backgroundInformationSV" type="String">
+			<hint-collection name="TEXTAREA" />
+		</field>
+		<field name="shortDescriptionFI" type="String">
+			<hint-collection name="TEXTAREA" />
+		</field>
+		<field name="shortDescriptionEN" type="String">
+			<hint-collection name="TEXTAREA" />
+		</field>
+		<field name="shortDescriptionSV" type="String">
+			<hint-collection name="TEXTAREA" />
+		</field>
+		<field name="address" type="String">
+			<hint-collection name="TEXTAREA" />
+		</field>
+		<field name="longitude" type="double" />
+		<field name="latitude" type="double" />
+		<field name="commitmentType" type="String" />
+		<field name="status" type="String" />
+		<field name="likes" type="int" />
+		<field name="joined" type="int" />
+	</model>
+	<model name="fi.weasel.commitment2050.commitmentanalysis.model.CommitmentAnalysisResult">
+		<field name="id" type="String" />
+		<field name="resultType" type="String" />
+		<field name="resultData" type="String" />
+		<field name="calculated" type="Date" />
+		<field name="success" type="boolean" />
+	</model>
+	<model name="fi.weasel.commitment2050.commitmentanalysis.model.DoneOperation">
+		<field name="id" type="String" />
+		<field name="commitmentId" type="String" />
+		<field name="operationId" type="String" />
+		<field name="operationCategory" type="String" />
+		<field name="operationTitleFI" type="String" />
+		<field name="operationTitleSV" type="String">
+			<hint-collection name="TEXTAREA" />
+		</field>
+		<field name="operationTitleEN" type="String">
+			<hint-collection name="TEXTAREA" />
+		</field>
+	</model>
+	<model name="fi.weasel.commitment2050.commitmentanalysis.model.Meter">
+		<field name="id" type="String" />
+		<field name="commitmentId" type="String" />
+		<field name="operationId" type="String" />
+		<field name="meterId" type="String" />
+		<field name="meterCategory" type="String" />
+		<field name="meterChartType" type="String" />
+		<field name="meterValueType" type="String" />
+		<field name="meterTypeFI" type="String">
+			<hint-collection name="TEXTAREA" />
+		</field>
+		<field name="meterTypeSV" type="String">
+			<hint-collection name="TEXTAREA" />
+		</field>
+		<field name="meterTypeEN" type="String">
+			<hint-collection name="TEXTAREA" />
+		</field>
+		<field name="startingLevel" type="String">
+			<hint-collection name="TEXTAREA" />
+		</field>
+		<field name="targetLevel" type="String">
+			<hint-collection name="TEXTAREA" />
+		</field>
+	</model>
+	<model name="fi.weasel.commitment2050.commitmentanalysis.model.Operation">
+		<field name="id" type="String" />
+		<field name="commitmentId" type="String" />
+		<field name="operationId" type="String" />
+		<field name="operationCategory" type="String" />
+		<field name="operationTitleFI" type="String">
+			<hint-collection name="TEXTAREA" />
+		</field>
+		<field name="operationTitleSV" type="String">
+			<hint-collection name="TEXTAREA" />
+		</field>
+		<field name="operationTitleEN" type="String">
+			<hint-collection name="TEXTAREA" />
+		</field>
+		<field name="operationDescriptionFI" type="String">
+			<hint-collection name="TEXTAREA" />
+		</field>
+		<field name="operationDescriptionSV" type="String">
+			<hint-collection name="TEXTAREA" />
+		</field>
+		<field name="operationDescriptionEN" type="String">
+			<hint-collection name="TEXTAREA" />
+		</field>
+	</model>
+	<model name="fi.weasel.commitment2050.commitmentanalysis.model.Report">
+		<field name="id" type="String" />
+		<field name="reportId" type="String" />
+		<field name="operationId" type="String" />
+		<field name="commitmentId" type="String" />
+		<field name="createdByUserId" type="int" />
+		<field name="createdByUserName" type="String">
+			<hint-collection name="TEXTAREA" />
+		</field>
+		<field name="organizationName" type="String">
+			<hint-collection name="TEXTAREA" />
+		</field>
+		<field name="progress" type="String" />
+		<field name="reportStartDate" type="Date" />
+		<field name="reportEndDate" type="Date" />
+		<field name="reportStatus" type="boolean" />
+		<field name="reportTextFI" type="String">
+			<hint-collection name="TEXTAREA" />
+		</field>
+		<field name="reportTextSV" type="String">
+			<hint-collection name="TEXTAREA" />
+		</field>
+		<field name="reportTextEN" type="String">
+			<hint-collection name="TEXTAREA" />
+		</field>
+		<field name="reportTitleFI" type="String">
+			<hint-collection name="TEXTAREA" />
+		</field>
+		<field name="reportTitleSV" type="String">
+			<hint-collection name="TEXTAREA" />
+		</field>
+		<field name="reportTitleEN" type="String">
+			<hint-collection name="TEXTAREA" />
+		</field>
+		<field name="status" type="String" />
+		<field name="version" type="double" />
+	</model>
+	<model name="fi.weasel.commitment2050.commitmentanalysis.model.ReportMeter">
+		<field name="id" type="String" />
+		<field name="commitmentId" type="String" />
+		<field name="operationId" type="String" />
+		<field name="reportId" type="String" />
+		<field name="meterId" type="String" />
+		<field name="meterCategory" type="String" />
+		<field name="meterChartType" type="String" />
+		<field name="meterValueType" type="String" />
+		<field name="meterTypeFI" type="String">
+			<hint-collection name="TEXTAREA" />
+		</field>
+		<field name="meterTypeSV" type="String">
+			<hint-collection name="TEXTAREA" />
+		</field>
+		<field name="meterTypeEN" type="String">
+			<hint-collection name="TEXTAREA" />
+		</field>
+		<field name="currentLevel" type="String">
+			<hint-collection name="TEXTAREA" />
+		</field>
+		<field name="startingLevel" type="String">
+			<hint-collection name="TEXTAREA" />
+		</field>
+		<field name="targetLevel" type="String">
+			<hint-collection name="TEXTAREA" />
+		</field>
+	</model>
+</model-hints>

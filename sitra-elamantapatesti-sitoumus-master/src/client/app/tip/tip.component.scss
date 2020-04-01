@@ -1,0 +1,141 @@
+@import 'mixins';
+@import 'button';
+
+:host {
+  border-bottom: 1px solid #dcdcdc;
+  display: block;
+  margin-bottom: 42px;
+}
+
+.tips {
+  &__heading {
+    h2 {
+      color: #212121;
+      font-size: 20px;
+    }
+
+    p {
+      color: #212121;
+      font-size: 16px;
+    }
+  }
+
+  &__spacer {
+    border-bottom: 1px solid #dcdcdc;
+    margin-bottom: 30px;
+    padding: 10px 0;
+    width: 100%;
+
+    span {
+      color: #6b6b6b;
+      font-size: 16px;
+      letter-spacing: 0.9px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.category {
+  @include breakpoint(mobile) {
+    margin: 0 -16px;
+  }
+
+  &-heading {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 16px;
+
+    &--green {
+      background-color: #e0f4d0;
+      border: 1px solid $color-green-secondary;
+    }
+
+    &--blue {
+      background-color: #d7f2fa;
+      border: 1px solid $color-blue-secondary;
+    }
+
+    &--yellow {
+      background-color: #ffef7f;
+      border: 1px solid $color-yellow-secondary;
+    }
+
+    &--orange {
+      background-color: #ffead3;
+      border: 1px solid $color-orange-secondary;
+    }
+
+    @include breakpoint(mobile) {
+      border-left: 0;
+      border-right: 0;
+    }
+
+    &__icon {
+      flex-grow: 0;
+      height: 30px;
+      width: 30px;
+    }
+
+    &__text-container {
+      align-items: center;
+      display: flex;
+      flex-grow: 1;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &__name {
+      color: #212121;
+      flex-basis: 100%;
+      flex-grow: 0;
+      font-weight: bold;
+      letter-spacing: 0.9px;
+      margin-left: 20px;
+      text-transform: uppercase;
+
+      @include breakpoint(mobile) {
+        flex-grow: 1;
+      }
+    }
+
+    &__decrease {
+      color: #212121;
+      flex-grow: 0;
+      letter-spacing: 0.9px;
+      margin-left: 20px;
+
+      span {
+        color: #93be38;
+        font-weight: bold;
+      }
+    }
+
+    &__count {
+      color: #6b6b6b;
+      flex-grow: 1;
+      letter-spacing: 0.9px;
+      margin-left: 20px;
+      text-align: right;
+      text-transform: uppercase;
+
+      @include breakpoint(mobile) {
+        text-align: left;
+      }
+    }
+  }
+}
+
+.tip-wrapper {
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.show-more {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  text-align: center;
+
+  button {
+    @extend %button-green;
+  }
+}

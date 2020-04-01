@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<custom-sql>
+
+    <!-- START CommitmentFinder -->
+
+    <sql id="fi.weasel.commitment2050.commitmentanalysis.service.persistence.CommitmentFinder.findByUserId">
+        <![CDATA[
+            SELECT * from ca.s where userId LIKE ?;
+        ]]>
+    </sql>
+    <sql id="fi.weasel.commitment2050.commitmentanalysis.service.persistence.CommitmentFinder.getAvgReductionByMeter">
+        <![CDATA[
+            SELECT meterTypeFI,
+                   COUNT(DISTINCT commitmentId)                            as commitments,
+                   SUM(targetLevel) / COUNT(DISTINCT commitmentId)         as averageReductionPercentage,
+                   10300 * COUNT(DISTINCT commitmentId) *
+                   (SUM(targetLevel) / COUNT(DISTINCT commitmentId) / 100) as totalReductionKg
+            FROM CA_Meter
+            WHERE meterId IN (
+                SELECT numericMeters.id
+                FROM (SELECT CAST(meters.meterId as unsigned) as id
+                      FROM (SELECT DISTINCT meterId
+                            FROM CA_Meter
+                            WHERE meterValueType = 'NUMBER'
+                              AND meterChartType = 'LINE'
+                              AND startingLevel = 0
+                              AND commitmentId IN (
+                                SELECT DISTINCT commitmentId
+                                FROM CA_Commitment
+                                WHERE commitmentType = 'COMMITMENT'
+                                  AND status = 'approved'
+                                  AND innovationFI IS NULL
+                                  AND innovationEN IS NULL
+                                  AND innovationSV IS NULL
+                                  AND (titleFI LIKE 'Tavoitteeni on%' OR titleEN LIKE 'My commitment is%')
+                            )) as meters) AS numericMeters
+                WHERE numericMeters.id > 10000
+            ) GROUP BY meterId;
+        ]]>
+    </sql>
+    <sql id="fi.weasel.commitment2050.commitmentanalysis.service.persistence.CommitmentFinder.getAverageReduction">
+        <![CDATA[
+            SELECT SUM(targetLevel)                                        as sumPercent,
+                   COUNT(targetLevel)                                      as totalMeters,
+                   SUM(targetLevel) / COUNT(DISTINCT commitmentId)         as averageReductionPercentage,
+                   COUNT(DISTINCT commitmentId)                            as commitments,
+                   10300                                                   as averageFootprintKg,
+                   10300 * COUNT(DISTINCT commitmentId) *
+                   (SUM(targetLevel) / COUNT(DISTINCT commitmentId) / 100) as totalReductionKg
+            FROM CA_Meter
+            WHERE meterId IN (
+                SELECT numericMeters.id
+                FROM (SELECT CAST(meters.meterId as unsigned) as id
+                      FROM (SELECT DISTINCT meterId
+                            FROM CA_Meter
+                            WHERE meterValueType = 'NUMBER'
+                              AND meterChartType = 'LINE'
+                              AND startingLevel = 0
+                              AND commitmentId IN (
+                                SELECT DISTINCT commitmentId
+                                FROM CA_Commitment
+                                WHERE commitmentType = 'COMMITMENT'
+                                  AND status = 'approved'
+                                  AND innovationFI IS NULL
+                                  AND innovationEN IS NULL
+                                  AND innovationSV IS NULL
+                                  AND (titleFI LIKE 'Tavoitteeni on%' OR titleEN LIKE 'My commitment is%')
+                            )) as meters) AS numericMeters
+                WHERE numericMeters.id > 10000
+            );
+        ]]>
+    </sql>
+    <sql id="fi.weasel.commitment2050.commitmentanalysis.service.persistence.CommitmentFinder.getAverageReductionKg">
+        <![CDATA[
+            SELECT 10300 * COUNT(DISTINCT commitmentId) * (SUM(targetLevel) / COUNT(targetLevel) / 100) as averageReductionKg
+            FROM ca.CA_Meter
+            WHERE meterId IN (
+                SELECT numericMeters.id
+                FROM (SELECT CAST(meters.meterId as unsigned) as id
+                      FROM (SELECT DISTINCT meterId
+                            FROM ca.CA_Meter
+                            WHERE meterValueType = 'NUMBER'
+                              AND meterChartType = 'LINE'
+                              AND startingLevel = 0
+                           ) as meters) AS numericMeters
+                WHERE numericMeters.id > 10000
+            )
+              AND commitmentId IN
+                  (SELECT commitmentId FROM ca.CA_Commitment WHERE status = 'approved' AND commitmentType = 'COMMITMENT');
+        ]]>
+    </sql>
+    <sql id="fi.weasel.commitment2050.commitmentanalysis.service.persistence.CommitmentFinder.countApprovedCommitmentsFromLifestyleTest">
+        <![CDATA[
+            SELECT COUNT(DISTINCT commitmentId) as totalCommitment
+            FROM ca.CA_Meter
+            WHERE meterId IN (
+                SELECT numericMeters.id
+                FROM (SELECT CAST(meters.meterId as unsigned) as id
+                      FROM (SELECT DISTINCT meterId
+                            FROM ca.CA_Meter
+                            WHERE meterValueType = 'NUMBER'
+                              AND meterChartType = 'LINE'
+                              AND startingLevel = 0
+                           ) as meters) AS numericMeters
+                WHERE numericMeters.id > 10000
+            ) AND commitmentId IN
+                  (SELECT commitmentId FROM ca.CA_Commitment WHERE status = 'approved' AND commitmentType = 'COMMITMENT');
+        ]]>
+    </sql>
+
+    <sql id="fi.weasel.commitment2050.commitmentanalysis.service.persistence.CommitmentFinder.getCommitmentCountByTypeAndOrgIdNullOrNotNull">
+        <![CDATA[
+            SELECT COUNT(DISTINCT commitmentId)
+            FROM ca.CA_Commitment
+            WHERE commitmentType IN ([$COMMITMENT_TYPES$])
+              AND status = 'approved' AND organizationId [$ORGANIZATION_IS_NULL$];
+        ]]>
+    </sql>
+    <sql id="fi.weasel.commitment2050.commitmentanalysis.service.persistence.CommitmentFinder.getCountForAllTypes">
+        <![CDATA[
+            SELECT
+                COUNT(IF(organizationId IS NOT NULL and commitmentType ='COMMITMENT' and status = 'approved', 1, NULL)) as 'organization',
+                COUNT(IF(organizationId IS NULL and commitmentType ='COMMITMENT' and status = 'approved', 1, NULL)) as 'personal',
+                COUNT(IF(commitmentType ='COMMITMENT' and status = 'approved', 1, NULL)) as 'total_commitments',
+                COUNT(IF(commitmentType = 'NUTRITION' AND status ='approved', 1, NULL)) as 'nutrition',
+                COUNT(IF(commitmentType = 'PLASTIC_BAG' AND status ='approved', 1, NULL)) as 'plastic',
+                COUNT(IF(commitmentType = 'OIL_INDUSTRY' AND status ='approved', 1, NULL)) as 'oil',
+                COUNT(IF(commitmentType = 'WORK_MACHINE' AND status ='approved', 1, NULL)) as 'work_machine',
+                COUNT(IF(commitmentType = 'AUTOMOTIVE_INDUSTRY' AND status ='approved', 1, NULL)) as 'auto',
+                COUNT(IF(commitmentType != 'COMMITMENT' AND commitmentType != 'NUTRITION' AND status ='approved', 1, NULL)) as 'total_green_deals',
+                COUNT(IF(commitmentType = 'DEMOLITION' AND status ='approved', 1, NULL)) as 'demolition'
+            FROM
+                CA_Commitment;
+        ]]>
+    </sql>
+
+    <sql id="fi.weasel.commitment2050.commitmentanalysis.service.persistence.CommitmentFinder.getWillDoLifestyleCommitmentCountByMeterId">
+        <![CDATA[
+            SELECT COUNT(CM.commitmentId)	AS commitmentCount
+            FROM ca.CA_Meter CM
+            WHERE CM.meterId = ?
+                AND EXISTS (SELECT 1
+                    FROM ca.CA_Commitment CC
+                    WHERE CC.commitmentId = CM.commitmentId
+                        AND CC.status = 'approved')
+                AND NOT EXISTS (SELECT 1
+                    FROM ca.CA_DoneOperation CDO
+                    WHERE CDO.operationId = CM.meterId
+                        AND CDO.commitmentId = CM.commitmentId)
+            GROUP BY CM.meterId
+        ]]>
+    </sql>
+
+    <!-- END CommitmentFinder -->
+
+    <!-- START CommitmentAnalysisResultFinder -->
+
+    <sql id="fi.weasel.commitment2050.commitmentanalysis.service.persistence.CommitmentAnalysisResultFinder.findLatestByResultType">
+        <![CDATA[
+            SELECT * FROM ca.CA_Results WHERE resultType = '[$RESULT_TYPE_STR$]' AND success = TRUE ORDER BY calculated DESC LIMIT 1
+        ]]>
+    </sql>
+
+    <!-- END CommitmentAnalysisResultFinder -->
+
+</custom-sql>
